@@ -27,22 +27,22 @@
         <div class="header_layer">
             <ul>
                 <li>
-                    <a href="index.jsp">
+                    <a href="">
                         首页<em>ホームページ</em>
                     </a>
                 </li>
                 <li>
-                    <a href="course.jsp">
+                    <a href="course.html">
                         精品课程<em>プレミアム課程</em>
                     </a>
                 </li>
                 <li>
-                    <a href="teacher.jsp">
+                    <a href="teacher.html">
                         优秀师资<em>優秀な教師チーム</em>
                     </a>
                 </li>
                 <li class="current">
-                    <a href="recommend.jsp">
+                    <a href="school/list.html">
                         推荐名校<em>名門校の推薦</em>
                     </a>
                 </li>
@@ -58,26 +58,26 @@
     <section class="banner">英才进学塾 成就梦想</section>
 
     <ul class="classify_box mb0">
-        <li class="current">
-            <a href="#">
+        <li <c:if test="${type==0}">class="current"</c:if>>>
+            <a href="school/list.html?pnow=1&type=0">
                 <h4>全部大学</h4>
                 <p>文科コース</p>
             </a>
         </li>
-        <li>
-            <a href="#">
+        <li <c:if test="${type==1}">class="current"</c:if>>>
+            <a href="school/list.html?pnow=1&type=1">
                 <h4>国立大学</h4>
                 <p>全科コース</p>
             </a>
         </li>
-        <li>
-            <a href="#">
+        <li <c:if test="${type==3}">class="current"</c:if>>>
+            <a href="school/list.html?pnow=1&type=3">
                 <h4>公立大学</h4>
                 <p>进学コース</p>
             </a>
         </li>
-        <li>
-            <a href="#">
+        <li <c:if test="${type==2}">class="current"</c:if>>>
+            <a href="school/list.html?pnow=1&type=2">
                 <h4>私立大学</h4>
                 <p>语言コース</p>
             </a>
@@ -92,7 +92,7 @@
         <ul class="space_mb">
             <c:forEach var="item" items="${schools}">
                 <li>
-                    <a class="recommend_item clearfix" href="#">
+                    <a class="recommend_item clearfix" href="school/recommend_detail.html?id=${item.id}">
                         <div class="recommend_item_pic">
                             <img width="100%" src="${url}${item.img}" alt="">
                         </div>
@@ -222,7 +222,7 @@
 
 
     <section class="assessment">
-        <img src="./images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
+        <img src="images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
         <form action="">
@@ -251,7 +251,7 @@
         </div>
     </footer>
 
-    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
     <script>
         $('.menu').on('click',function () {
             $(this).toggleClass('close');

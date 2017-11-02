@@ -27,22 +27,22 @@
         <div class="header_layer">
             <ul>
                 <li>
-                    <a href="index.jsp">
+                    <a href="">
                         首页<em>ホームページ</em>
                     </a>
                 </li>
-                <li class="current">
-                    <a href="course.jsp">
+                <li class="course.html">
+                    <a href="course.html">
                         精品课程<em>プレミアム課程</em>
                     </a>
                 </li>
                 <li>
-                    <a href="teacher.jsp">
+                    <a href="teacher.html">
                         优秀师资<em>優秀な教師チーム</em>
                     </a>
                 </li>
                 <li>
-                    <a href="recommend.jsp">
+                    <a href="school/list.html">
                         推荐名校<em>名門校の推薦</em>
                     </a>
                 </li>
@@ -55,29 +55,29 @@
         </div>
     </header>
 
-    <img src="./images/course_banner.jpg" width="100%" alt="">
+    <img src="images/course_banner.jpg" width="100%" alt="">
 
     <ul class="classify_box">
         <li class="current">
-            <a href="#">
+            <a href="javascript:void(0)">
                 <h4>文科套餐</h4>
                 <p>文科コース</p>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="javascript:void(0)">
                 <h4>全科套餐<i class="hot"></i></h4>
                 <p>全科コース</p>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="javascript:void(0)">
                 <h4>进学套餐</h4>
                 <p>进学コース</p>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="javascript:void(0)">
                 <h4>语言套餐</h4>
                 <p>语言コース</p>
             </a>
@@ -85,7 +85,7 @@
     </ul>
     
     <section class="course_cont">
-        <img src="./images/course_title_icon.png" class="course_title_icon" alt="">
+        <img src="images/course_title_icon.png" class="course_title_icon" alt="">
         <h3>上半年文科套餐01</h3>
         <div class="examination_courses">
             <h4>留学考试课程</h4>
@@ -131,7 +131,7 @@
     </section>
 
     <section class="course_cont">
-        <img src="./images/course_title_icon.png" class="course_title_icon" alt="">
+        <img src="images/course_title_icon.png" class="course_title_icon" alt="">
         <h3>上半年文科套餐02</h3>
         <div class="examination_courses">
             <h4>留学考试课程</h4>
@@ -177,7 +177,7 @@
     </section>
 
     <section class="assessment">
-        <img src="./images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
+        <img src="images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
         <form action="">
@@ -206,10 +206,10 @@
         </div>
     </footer>
 
-    <img src="./images/side_ad.png" class="side_ad" alt="2018夏季入学优惠">
+    <img src="images/side_ad.png" class="side_ad" alt="2018夏季入学优惠">
     <div class="side_assess_consult">
-        <img src="./images/assess_icon.png" class="free_assess" alt="免费评估">
-        <img src="./images/consult_icon.png" alt="在线咨询">
+        <img src="images/assess_icon.png" class="free_assess" alt="免费评估">
+        <img src="images/consult_icon.png" alt="在线咨询">
     </div>
 
     <div class="assess_pop">

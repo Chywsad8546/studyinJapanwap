@@ -27,22 +27,22 @@
         <div class="header_layer">
             <ul>
                 <li>
-                    <a href="index.jsp">
+                    <a href="">
                         首页<em>ホームページ</em>
                     </a>
                 </li>
                 <li>
-                    <a href="course.jsp">
+                    <a href="course.html">
                         精品课程<em>プレミアム課程</em>
                     </a>
                 </li>
                 <li class="current">
-                    <a href="teacher.jsp">
+                    <a href="teacher.html">
                         优秀师资<em>優秀な教師チーム</em>
                     </a>
                 </li>
                 <li>
-                    <a href="recommend.jsp">
+                    <a href="school/list.html">
                         推荐名校<em>名門校の推薦</em>
                     </a>
                 </li>
@@ -56,44 +56,48 @@
     </header>
 
     <div class="banner">
-        <img src="./img/recommend_detail_banner.jpg" width="100%" alt="">
+        <img src="img/recommend_detail_banner.jpg" width="100%" alt="">
     </div>
 
     <section class="detail_main">
         <div class="detail_school clearfix">
-            <img src="./img/school_pic.png" alt="早稻田大学">
+            <img src="${url}${school.img}" alt="${school.uname}">
             <div>
-                <h2>早稻田大学</h2>
-                <p>早稲田大学</p>
+                <h2>${school.uname}</h2>
+                <p>${school.jpname}</p>
                 <div class="attestation">
+                    <c:if test="${school.authentication==1}">
                     <i class="recommend_detail_icon"></i>
                     <p>教育部认证</p>
+                    </c:if>
                 </div>
             </div>
         </div>
-        <p><i class="recommend_detail_icon address"></i><span>日本-东京都-新宿区</span></p>
-        <p><i class="recommend_detail_icon num"></i><span>CWUR日本大学排名<em>22</em></span></p>
+        <p><i class="recommend_detail_icon address"></i><span>${school.schooladress}</span></p>
+       <%-- <p><i class="recommend_detail_icon num"></i><span>CWUR日本大学排名<em>22</em></span></p>--%>
     </section>
 
     <section class="school_detail">
         <ul>
             <li class="school_list_item clearfix">
-                <span class="jfl"><em>省州：</em>东京都</span>
-                <span class="jfr"><em>城市：</em>新宿区</span>
+                <span class="jfl"><em>地址：</em>${school.schooladress}</span>
             </li>
             <li class="school_list_item clearfix">
-                <span class="jfl"><em>性质：</em>私立</span>
-                <span class="jfr"><em>建校年份：</em>1882年</span>
+                <span class="jfl"><em>性质：</em><c:choose><c:when test="${school.schoolnature== 1}">国立</c:when>
+                    <c:when test="${school.schoolnature== 2}">私立</c:when>
+                    <c:when test="${school.schoolnature== 3}">公立</c:when></c:choose></span>
+                <span class="jfr"><em>建校年份：</em>${school.buldingschooltime}年</span>
             </li>
             <li class="school_list_item clearfix">
-                <span class="jfl"><em>人数：</em>53574人</span>
+                <span class="jfl"><em>人数：</em>${school.peoplecount}人</span>
+                <span class="jfl"><em>人气：</em>${school.popularity}</span>
             </li>
-            <li class="school_list_item">
+            <%--<li class="school_list_item">
                 <span><em>知名校友：</em>福田康夫  井深大  李秉喆  堺雅人  村上春树</span>
             </li>
             <li class="school_list_item">
                 <span><em>校训：</em>「學問之獨立」「學問之活用」「成就模範之國民」</span>
-            </li>
+            </li>--%>
         </ul>
     </section>
 
@@ -104,23 +108,21 @@
     </a>
 
     <section class="school_overview">
-        <p>早稻田大學（日语：早稲田大学／わせだだいがく Waseda Daigaku；英語譯名：Waseda University），简称早大、早稻田，是一所本部位於日本东京都新宿区的私立大学。早稻田大學於1882年，由明治維新時期開國元老之一，前內閣總理大臣大隈重信創立，建校之精神為「學問之獨立」、「學問之活用」及「成就模範之國民」。</p>
-        <p>早稻田大學作為日本國內首屈一指的私立大學，十分重視國際合作與交流事業，除校內有6個學部與11個研究科設立英語課程學位外，從2009年起一直為日本國內留學生人數最多的大學，在中國更為日本最具知名度的大學之一。</p>
-        <p>根据2017年发表的QS世界大學排行榜显示，早稻田大學位列全球第203名，而在亞洲大學排行榜中則位列亞洲第41名。同时，根据同公司发表的大学毕业生就业排名显示，早稻田大學位列全球第33名，在亚洲区排行第6，在日本排行第1。</p>
+        <p>${school.synopsis}</p>
     </section>
 
     <section class="module_box major_box">
         <i class="recommend_detail_icon major"></i>
         <h2 class="module_title">专业设置</h2>
-        <p class="subhead">早稻田大学共专业共1222个</p>
+        <p class="subhead">${school.uname}共专业共${school.phd+school.graduate+school.undergraduate+school.speechcenter}个</p>
         <ul class="major_list">
             <li class="school_list_item clearfix">
-                <span class="jfl">博士（22）</span>
-                <span class="jfr">硕士（22）</span>
+                <span class="jfl">博士（${school.phd}）</span>
+                <span class="jfr">硕士（${school.graduate}）</span>
             </li>
             <li class="school_list_item clearfix">
-                <span class="jfl">本科（22）</span>
-                <span class="jfr">语言中心（22）</span>
+                <span class="jfl">本科（${school.undergraduate}）</span>
+                <c:if test="${school.speechcenter!=0}"> <span class="jfr">语言中心（${school.speechcenter}）</span></c:if>
             </li>
         </ul>
     </section>
@@ -128,29 +130,38 @@
     <section class="module_box cost_box">
         <i class="recommend_detail_icon cost"></i>
         <h2 class="module_title">留学费用</h2>
-        <p class="subhead">2017-2018早稻田大学学费</p>
+        <p class="subhead">2017-2018${school.uname}学费</p>
         <ul class="cost_list">
             <li class="school_list_item clearfix">
                 <span class="cost_item"><strong>博士</strong>参考学费：</span>
                 <p class="cost_price">
-                    <span>43333日元每周起</span>
-                    <span>RMB2999.99元每周起</span>
+                    <span>${tuition.ptuition*rate}日元每年起</span>
+                    <span>RMB${tuition.ptuition*rate}元每年起</span>
                 </p>
             </li>
             <li class="school_list_item clearfix">
-                <span class="cost_item"><strong>博士</strong>参考学费：</span>
+                <span class="cost_item"><strong>研究生</strong>参考学费：</span>
                 <p class="cost_price">
-                    <span>43333日元每周起</span>
-                    <span>RMB2999.99元每周起</span>
+                    <span>${tuition.gtuition*rate}日元每年起</span>
+                    <span>RMB${tuition.gtuition}元每年起</span>
                 </p>
             </li>
             <li class="school_list_item clearfix">
-                <span class="cost_item"><strong>博士</strong>参考学费：</span>
+                <span class="cost_item"><strong>本科</strong>参考学费：</span>
                 <p class="cost_price">
-                    <span>43333日元每周起</span>
-                    <span>RMB2999.99元每周起</span>
+                    <span>${tuition.utuition*rate}日元每年起</span>
+                    <span>RMB${tuition.utuition}元每年起</span>
                 </p>
             </li>
+            <c:if test="${school.speechcenter!=0}">
+            <li class="school_list_item clearfix">
+                <span class="cost_item"><strong>语言中心</strong>参考学费：</span>
+                <p class="cost_price">
+                    <span>${tuition.ptuition*rate}日元每周起</span>
+                    <span>RMB${tuition.ptuition}元每周起</span>
+                </p>
+            </li>
+            </c:if>
         </ul>
     </section>
 
@@ -158,7 +169,7 @@
         <i class="recommend_detail_icon map"></i>
         <h2 class="module_title">地图</h2>
         <div class="map_cont">
-            <img src="/img/map.jpg" width="100%" alt="">
+            <img src="img/map.jpg" width="100%" alt="">
         </div>
     </section>
 
@@ -166,10 +177,26 @@
         <i class="recommend_detail_icon hot_recommend"></i>
         <h2 class="module_title">热门推荐院校</h2>
         <ul class="clearfix">
-            <li class="hot_list">
+            <c:forEach var="node" items="${schoolre}">
+                <li class="hot_list">
+                    <a href="school/recommend_detail.html?id=${node.id}">
+                        <div class="hot_pic">
+                            <img src="${url}${node.img}" width="100%" alt="">
+                        </div>
+                        <div class="hot_list_cont">
+                            <h6>${node.uname}</h6>
+                            <span>${node.jpname}</span>
+                        </div>
+                    </a>
+                </li>
+            </c:forEach>
+
+
+
+            <%--<li class="hot_list">
                 <a href="#">
                     <div class="hot_pic">
-                        <img src="./img/hot_list_pic.jpg" width="100%" alt="">
+                        <img src="img/hot_list_pic.jpg" width="100%" alt="">
                     </div>
                     <div class="hot_list_cont">
                         <h6>早稻田大学</h6>
@@ -180,7 +207,7 @@
             <li class="hot_list">
                 <a href="#">
                     <div class="hot_pic">
-                        <img src="./img/hot_list_pic.jpg" width="100%" alt="">
+                        <img src="img/hot_list_pic.jpg" width="100%" alt="">
                     </div>
                     <div class="hot_list_cont">
                         <h6>早稻田大学</h6>
@@ -191,30 +218,19 @@
             <li class="hot_list">
                 <a href="#">
                     <div class="hot_pic">
-                        <img src="./img/hot_list_pic.jpg" width="100%" alt="">
+                        <img src="img/hot_list_pic.jpg" width="100%" alt="">
                     </div>
                     <div class="hot_list_cont">
                         <h6>早稻田大学</h6>
                         <span>日文名字</span>
                     </div>
                 </a>
-            </li>
-            <li class="hot_list">
-                <a href="#">
-                    <div class="hot_pic">
-                        <img src="./img/hot_list_pic.jpg" width="100%" alt="">
-                    </div>
-                    <div class="hot_list_cont">
-                        <h6>早稻田大学</h6>
-                        <span>日文名字</span>
-                    </div>
-                </a>
-            </li>
+            </li>--%>
         </ul>
     </section>
 
     <section class="assessment">
-        <img src="./images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
+        <img src="images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
         <form action="">
@@ -243,8 +259,8 @@
         </div>
     </footer>
 
-    <script src="./js/jquery-1.11.3.min.js"></script>
-    <script src="./js/swiper-3.4.2.jquery.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
     <script>
         $('.menu').on('click',function () {
             $(this).toggleClass('close');

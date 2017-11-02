@@ -27,22 +27,22 @@
         <div class="header_layer">
             <ul>
                 <li class="current">
-                    <a href="index.jsp">
+                    <a href="">
                         首页<em>ホームページ</em>
                     </a>
                 </li>
                 <li>
-                    <a href="course.jsp">
+                    <a href="course.html">
                         精品课程<em>プレミアム課程</em>
                     </a>
                 </li>
                 <li>
-                    <a href="teacher.jsp">
+                    <a href="teacher.html">
                         优秀师资<em>優秀な教師チーム</em>
                     </a>
                 </li>
                 <li>
-                    <a href="recommend.jsp">
+                    <a href="school/list.html">
                         推荐名校<em>名門校の推薦</em>
                     </a>
                 </li>
@@ -86,7 +86,7 @@
             <li>
                 <a class="list_item clearfix" href="#">
                     <div class="list_item_pic">
-                        <img width="100%" src="./images/news_list_pic.jpg" alt="">
+                        <img width="100%" src="images/news_list_pic.jpg" alt="">
                     </div>
                     <div class="list_item_cont">
                         <h5>日本经营学专业优势介绍</h5>
@@ -116,7 +116,7 @@
             <li>
                 <a class="list_item clearfix" href="#">
                     <div class="list_item_pic">
-                        <img width="100%" src="./images/news_list_pic.jpg" alt="">
+                        <img width="100%" src="images/news_list_pic.jpg" alt="">
                     </div>
                     <div class="list_item_cont">
                         <h5>日本经营学专业优势介绍</h5>
@@ -133,7 +133,7 @@
 
 
     <section class="assessment">
-        <img src="./images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
+        <img src="images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
         <form action="">
@@ -162,7 +162,7 @@
         </div>
     </footer>
 
-    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
     <script>
         $('.menu').on('click',function () {
             $(this).toggleClass('close');

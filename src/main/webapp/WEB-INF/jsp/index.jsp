@@ -28,17 +28,17 @@
         <div class="header_layer">
             <ul>
                 <li class="current">
-                    <a href="index.jsp">
+                    <a href="">
                         首页<em>ホームページ</em>
                     </a>
                 </li>
                 <li>
-                    <a href="course.jsp">
+                    <a href="course.html">
                         精品课程<em>プレミアム課程</em>
                     </a>
                 </li>
                 <li>
-                    <a href="teacher.jsp">
+                    <a href="teacher.html">
                         优秀师资<em>優秀な教師チーム</em>
                     </a>
                 </li>
@@ -60,17 +60,17 @@
         <div class="swiper-container banner_swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide banner_item">
-                    <img src="./images/index_banner.jpg" width="100%" alt="明德笃实，筑梦名校">
+                    <img src="images/index_banner.jpg" width="100%" alt="明德笃实，筑梦名校">
                     <p>明德笃实，筑梦名校</p>
                     <div class="banner_mask"></div>
                 </div>
                 <div class="swiper-slide banner_item">
-                    <img src="./images/index_banner.jpg" width="100%" alt="明德笃实，筑梦名校">
+                    <img src="images/index_banner.jpg" width="100%" alt="明德笃实，筑梦名校">
                     <p>明德笃实，筑梦名校</p>
                     <div class="banner_mask"></div>
                 </div>
                 <div class="swiper-slide banner_item">
-                    <img src="./images/index_banner.jpg" width="100%" alt="明德笃实，筑梦名校">
+                    <img src="images/index_banner.jpg" width="100%" alt="明德笃实，筑梦名校">
                     <p>明德笃实，筑梦名校</p>
                     <div class="banner_mask"></div>
                 </div>
@@ -94,7 +94,7 @@
         <i class="index_icon"></i>
         <h2 class="module_title">英才进学塾优势  我々の強み</h2>
         <dl class="superiority_item clearfix">
-            <dt><img src="./images/superiority_item_pic1.png" width="100%" alt="亲临日本"></dt>
+            <dt><img src="images/superiority_item_pic1.png" width="100%" alt="亲临日本"></dt>
             <dd>
                 <h3>亲临日本</h3>
                 <span>日本に位置する</span>
@@ -102,7 +102,7 @@
             </dd>
         </dl>
         <dl class="superiority_item clearfix">
-            <dt><img src="./images/superiority_item_pic2.png" width="100%" alt="师资优秀"></dt>
+            <dt><img src="images/superiority_item_pic2.png" width="100%" alt="师资优秀"></dt>
             <dd>
                 <h3>师资优秀</h3>
                 <span>優秀な教師チーム</span>
@@ -110,7 +110,7 @@
             </dd>
         </dl>
         <dl class="superiority_item clearfix">
-            <dt><img src="./images/superiority_item_pic3.png" width="100%" alt="精品小班"></dt>
+            <dt><img src="images/superiority_item_pic3.png" width="100%" alt="精品小班"></dt>
             <dd>
                 <h3>精品小班</h3>
                 <span>少人数教育</span>
@@ -118,7 +118,7 @@
             </dd>
         </dl>
         <dl class="superiority_item clearfix">
-            <dt><img src="./images/superiority_item_pic4.png" width="100%" alt="搭配灵活"></dt>
+            <dt><img src="images/superiority_item_pic4.png" width="100%" alt="搭配灵活"></dt>
             <dd>
                 <h3>搭配灵活</h3>
                 <span>フレキシブルな教育配置</span>
@@ -179,7 +179,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide case_item">
                         <div class="student_msg clearfix">
-                            <div class="student_pic"><img src="./img/case_pic1.png" width="100%" alt="刘思垒"></div>
+                            <div class="student_pic"><img src="img/case_pic1.png" width="100%" alt="刘思垒"></div>
                             <div class="message">
                                 <h6>刘思垒同学</h6>
                                 <p>北京林业大学  大四</p>
@@ -221,7 +221,7 @@
                     </div>
                     <div class="swiper-slide case_item">
                         <div class="student_msg clearfix">
-                            <div class="student_pic"><img src="./img/case_pic1.png" width="100%" alt="刘思垒"></div>
+                            <div class="student_pic"><img src="img/case_pic1.png" width="100%" alt="刘思垒"></div>
                             <div class="message">
                                 <h6>刘思垒同学</h6>
                                 <p>北京林业大学  大四</p>
@@ -263,7 +263,7 @@
                     </div>
                     <div class="swiper-slide case_item">
                         <div class="student_msg clearfix">
-                            <div class="student_pic"><img src="./img/case_pic1.png" width="100%" alt="刘思垒"></div>
+                            <div class="student_pic"><img src="img/case_pic1.png" width="100%" alt="刘思垒"></div>
                             <div class="message">
                                 <h6>刘思垒同学</h6>
                                 <p>北京林业大学  大四</p>
@@ -314,10 +314,27 @@
         <i class="index_icon"></i>
         <h2 class="module_title">留学资讯  ケース</h2>
         <ul>
-            <li>
+            <c:forEach var="item" items="${newslist}">
+                <li>
+                    <a class="list_item clearfix" href="news/newsdetail.html?id=${item.id}">
+                        <div class="list_item_pic">
+                            <img width="100%" src="images/news_list_pic.jpg" alt="">
+                        </div>
+                        <div class="list_item_cont">
+                            <h5>${item.title}</h5>
+                            <p>${item.description}</p>
+                            <div class="views_time clearfix">
+                                <p class="views"><i class="base_icon"></i>${item.hits}</p>
+                                <p class="time">${item.updatetime}</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </c:forEach>
+         <%--   <li>
                 <a class="list_item clearfix" href="#">
                     <div class="list_item_pic">
-                        <img width="100%" src="./images/news_list_pic.jpg" alt="">
+                        <img width="100%" src="images/news_list_pic.jpg" alt="">
                     </div>
                     <div class="list_item_cont">
                         <h5>日本经营学专业优势介绍</h5>
@@ -332,7 +349,7 @@
             <li>
                 <a class="list_item clearfix" href="#">
                     <div class="list_item_pic">
-                        <img width="100%" src="./images/news_list_pic.jpg" alt="">
+                        <img width="100%" src="images/news_list_pic.jpg" alt="">
                     </div>
                     <div class="list_item_cont">
                         <h5>日本经营学专业优势介绍</h5>
@@ -347,7 +364,7 @@
             <li>
                 <a class="list_item clearfix" href="#">
                     <div class="list_item_pic">
-                        <img width="100%" src="./images/news_list_pic.jpg" alt="">
+                        <img width="100%" src="images/news_list_pic.jpg" alt="">
                     </div>
                     <div class="list_item_cont">
                         <h5>日本经营学专业优势介绍</h5>
@@ -358,9 +375,9 @@
                         </div>
                     </div>
                 </a>
-            </li>
+            </li>--%>
         </ul>
-        <a class="more_info" href="#">更多资讯</a>
+        <a class="more_info" href="news/morenews.html">更多资讯</a>
     </section>
 
     <section class="faqs">
@@ -382,7 +399,7 @@
     </section>
 
     <section class="assessment">
-        <img src="./images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
+        <img src="images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
         <form action="">
@@ -432,10 +449,10 @@
         </div>
     </footer>
 
-    <img src="./images/side_ad.png" class="side_ad" alt="2018夏季入学优惠">
+    <img src="images/side_ad.png" class="side_ad" alt="2018夏季入学优惠">
 
-    <script src="./js/jquery-1.11.3.min.js"></script>
-    <script src="./js/swiper-3.4.2.jquery.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
     <script>
         var bannerSwiper = new Swiper('.banner_swiper', {
             autoplay: 5000,//可选选项，自动滑动

@@ -27,22 +27,22 @@
         <div class="header_layer">
             <ul>
                 <li>
-                    <a href="index.jsp">
+                    <a href="">
                         首页<em>ホームページ</em>
                     </a>
                 </li>
                 <li>
-                    <a href="course.jsp">
+                    <a href="course.html">
                         精品课程<em>プレミアム課程</em>
                     </a>
                 </li>
                 <li class="current">
-                    <a href="teacher.jsp">
+                    <a href="teacher.html">
                         优秀师资<em>優秀な教師チーム</em>
                     </a>
                 </li>
                 <li>
-                    <a href="recommend.jsp">
+                    <a href="school/list.html">
                         推荐名校<em>名門校の推薦</em>
                     </a>
                 </li>
@@ -59,7 +59,7 @@
 
     <section class="tearcher_msg">
         <dl class="tearcher_item clearfix">
-            <dt><img src="./images/teacher_1.jpg" width="100%" alt="洪一鸣"></dt>
+            <dt><img src="images/teacher_1.jpg" width="100%" alt="洪一鸣"></dt>
             <dd>
                 <h5>洪一鸣</h5>
                 <span>早稻田大学文化构想学部</span>
@@ -67,7 +67,7 @@
             </dd>
         </dl>
         <dl class="tearcher_item clearfix">
-            <dt><img src="./images/teacher_2.jpg" width="100%" alt="邓超"></dt>
+            <dt><img src="images/teacher_2.jpg" width="100%" alt="邓超"></dt>
             <dd>
                 <h5>邓超</h5>
                 <span>早稻田大学文化构想学部</span>
@@ -75,7 +75,7 @@
             </dd>
         </dl>
         <dl class="tearcher_item clearfix">
-            <dt><img src="./images/teacher_3.jpg" width="100%" alt="李沛时"></dt>
+            <dt><img src="images/teacher_3.jpg" width="100%" alt="李沛时"></dt>
             <dd>
                 <h5>李沛时</h5>
                 <span>早稻田大学文化构想学部</span>
@@ -84,7 +84,7 @@
             </dd>
         </dl>
         <dl class="tearcher_item clearfix">
-            <dt><img src="./images/teacher_4.jpg" width="100%" alt="马璐"></dt>
+            <dt><img src="images/teacher_4.jpg" width="100%" alt="马璐"></dt>
             <dd>
                 <h5>马璐</h5>
                 <span>早稻田大学文化构想学部</span>
@@ -143,7 +143,7 @@
     </section>
 
     <section class="assessment">
-        <img src="./images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
+        <img src="images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
         <form action="">
@@ -172,7 +172,7 @@
         </div>
     </footer>
 
-    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
     <script>
         $('.menu').on('click',function () {
             $(this).toggleClass('close');
