@@ -85,7 +85,25 @@
 
     <section>
         <ul>
-            <li>
+            <c:forEach var="article" items="${articlelist}">
+                <li>
+                    <a class="list_item clearfix" href="news/newsdetail.html?id=${article.id}">
+                        <div class="list_item_pic">
+                            <img width="100%" src="${article.imgurl}" alt="">
+                        </div>
+                        <div class="list_item_cont">
+                            <h5>${article.title}</h5>
+                            <p>${article.description}</p>
+                            <div class="views_time clearfix">
+                                <p class="views"><i class="base_icon"></i>${article.hits}</p>
+                                <p class="time">${article.updatetime}</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </c:forEach>
+
+            <%--<li>
                 <a class="list_item clearfix" href="#">
                     <div class="list_item_pic">
                         <img width="100%" src="images/news_list_pic.jpg" alt="">
@@ -114,27 +132,33 @@
                         </div>
                     </div>
                 </a>
-            </li>
-            <li>
-                <a class="list_item clearfix" href="#">
-                    <div class="list_item_pic">
-                        <img width="100%" src="images/news_list_pic.jpg" alt="">
-                    </div>
-                    <div class="list_item_cont">
-                        <h5>日本经营学专业优势介绍</h5>
-                        <p>日本经营学专业优势介绍日</p>
-                        <div class="views_time clearfix">
-                            <p class="views"><i class="base_icon"></i>1024</p>
-                            <p class="time">2017-10-01 10:33</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
+            </li>--%>
         </ul>
-        <p class="paging_msg">每页20条 共200条</p>
+        <p class="paging_msg">每页4条 共${page.nodeCount}条</p>
         <div class="paging_group">
-            <a class="disable" href="#">上一页</a>
-            <a href="#">下一页</a>
+            <c:choose>
+            <c:when test="${page.pageCount==1||page.pageCount==0}">
+                <a class="disable" href="javascript:void(0)">上一页</a>
+                <a class="disable" href="javascript:void(0)">下一页</a>
+            </c:when>
+
+                <c:when  test="${page.pageNow== 1}">
+                    <a  href="javascript:void(0)">上一页</a>
+                    <a class="disable" href="news/morenews.html?pnow=${page.pageNow+1}&type=${type}">下一页</a>
+                </c:when>
+
+                <c:when test="${page.pageNow== page.pageCount}">
+                    <a class="disable" href="news/morenews.html?pnow=${page.pageNow-1}&type=${type}">上一页</a>
+                    <a href="javascript:void(0)">下一页</a>
+            </c:when>
+
+                <c:otherwise>
+                    <a  href="news/morenews.html?pnow=${page.pageNow-1}&type=${type}">上一页</a>
+                    <a  href="news/morenews.html?pnow=${page.pageNow+1}&type=${type}">下一页</a>
+                </c:otherwise>
+
+            </c:choose>
+
         </div>
     </section>
 

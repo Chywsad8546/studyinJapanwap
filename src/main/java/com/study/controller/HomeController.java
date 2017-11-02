@@ -77,14 +77,14 @@ public class HomeController {
         return view;
     }
 
-    /**
+/*    *//**
      * 留学资讯
      * @return
-     */
+     *//*
     @RequestMapping(value = "/news.html")
     public  ModelAndView news() {
         ModelAndView view = new ModelAndView("news");
         return view;
-    }
+    }*/
 
 }

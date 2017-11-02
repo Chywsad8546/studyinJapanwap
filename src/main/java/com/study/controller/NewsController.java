@@ -28,7 +28,7 @@ public class NewsController {
                                                                                                                ) {
 
 
-          ModelAndView modelAndView=new ModelAndView("news");
+          ModelAndView modelAndView=new ModelAndView("views_list");
 
           Article article=new Article();
           article.setClass2(type);
@@ -60,7 +60,7 @@ public class NewsController {
 
     @RequestMapping(value = "/newsdetail.html" )
     public ModelAndView newsdetail(HttpServletRequest request){
-             ModelAndView view=new ModelAndView("news_detail");
+             ModelAndView view=new ModelAndView("views_detail");
            int id=Integer.parseInt(request.getParameter("id"));
            int hitadd=nm.hitadd(id);
            Article article=nm.newsdetail(id);
