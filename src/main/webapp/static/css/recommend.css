@@ -1,0 +1,111 @@
+@charset "UTF-8";
+.space_mb {
+    margin-bottom: 0.16rem;
+}
+.banner {
+    width: 100%;
+    height: 2rem;
+    padding-top: 0.73rem;
+    color: #FFF;
+    font-size: 0.36rem;
+    text-align: center;
+    text-shadow: 0 0 6px rgba(0,0,0,0.50);
+    background: url(../images/recommend_banner.jpg) no-repeat;
+    background-size: auto 2rem;
+    box-sizing: border-box;
+}
+.recommend_cont {
+    padding: 0.12rem 0.2rem 0.1rem;
+}
+.recommend_cont > span {
+    display: block;
+    color: #9F9FAA;
+    font-size: 0.24rem;
+    line-height: 0.34rem;
+}
+.recommend_cont .recommend_icon.num {
+    top: 0.02rem;
+}
+.recommend_item {
+    display: block;
+    padding: 0.2rem;
+    background-color: #FFF;
+    -webkit-box-shadow: inset 0 -1px 0 0 #EEE;
+    box-shadow: inset 0 -1px 0 0 #EEE;
+}
+.recommend_item .recommend_item_pic {
+    float: left;
+    width: 2.4rem;
+    height: 1.8rem;
+    margin-right: 0.2rem;
+}
+.recommend_item .recommend_item_cont {
+    float: right;
+    width: 4.5rem;
+}
+.recommend_item_cont > h5 {
+    font-size: 0.3rem;
+    line-height: 0.3rem;
+}
+.recommend_item_cont > h5 > span {
+    margin-left: 0.15rem;
+    color: #9F9FAA;
+    font-size: 0.24rem;
+}
+.recommend_item_cont .address {
+    margin-top: 0.22rem;
+    color: #9F9FAA;
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+}
+.recommend_item_cont > div:last-child {
+    margin-top: 0.21rem;
+}
+.recommend_item_cont .authentication {
+    position: relative;
+    margin-top: 0.23rem;
+    color: #1DB169;
+}
+.authentication > p {
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+}
+.authentication > span {
+    position: absolute;
+    bottom: -0.08rem;
+    right: 0;
+}
+.authentication strong {
+    font-size: 0.48rem;
+    line-height: 0.48rem;
+}
+.recommend_item_cont > div > span {
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+}
+.recommend_icon {
+    position: relative;
+    display: inline-block;
+    background: url(../images/recommend_icon.png) no-repeat;
+    background-size: 1.4rem auto;
+}
+.recommend_icon.add {
+    top: 0.02rem;
+    width: 0.2rem;
+    height: 0.24rem;
+    margin-right: 0.05rem;
+    background-position: -0.18rem -0.22rem;
+}
+.recommend_icon.auth {
+    top: 0.04rem;
+    width: 0.26rem;
+    height: 0.26rem;
+    margin-left: 0.1rem;
+    background-position: -0.92rem -0.22rem;
+}
+.recommend_icon.num {
+    width: 0.26rem;
+    height: 0.24rem;
+    margin-right: 0.1rem;
+    background-position: -0.52rem -0.22rem;
+}

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* ==== banner begin ==== */
+.banner {
+    width: 100%;
+    height: 2rem;
+    padding-top: 0.73rem;
+    color: #FFF;
+    font-size: 0.36rem;
+    text-align: center;
+    text-shadow: 0 0 6px rgba(0,0,0,0.50);
+    background: url(../images/teacher_banner.jpg) no-repeat;
+    background-size: auto 2rem;
+    box-sizing: border-box;
+}
+/* ====================== */
+
+/* ==== teacher_msg begin ==== */
+.tearcher_msg .tearcher_item {
+    padding: 0.4rem 0.3rem;
+    background-color: #FFF;
+    box-shadow: inset 0 -1px 0 0 #EEE;
+}
+.tearcher_item > dt {
+    float: left;
+    width: 1.8rem;
+    margin-right: 0.4rem;
+}
+.tearcher_item > dd {
+    float: right;
+    width: 4.7rem;
+}
+.tearcher_item > dd > h5 {
+    color: #262082;
+    font-size: 0.32rem;
+}
+.tearcher_item > dd > span {
+    display: block;
+    margin-top: 0.1rem;
+    color: #262082;
+    font-size: 0.26rem;
+}
+.tearcher_item > dd > p {
+    margin-top: 0.28rem;
+    color: #66647D;
+    font-size: 0.26rem;
+    line-height: 0.36rem;
+}
+/* =========================== */
+
+/* ==== eju begin ==== */
+.eju {
+    padding: 0.6rem 0.3rem;
+}
+.eju > h2 {
+    margin-top: 0.24rem;
+    margin-bottom: 0.6rem;
+    color: #262082;
+    font-size: 0.48rem;
+    line-height: 0.48rem;
+    text-align: center;
+}
+.eju > p {
+    font-size: 0.28rem;
+    line-height: 0.48rem;
+    text-align: justify;
+}
+.table_box {
+    margin-top: 0.72rem;
+    margin-bottom: 0.6rem;
+    overflow-x: scroll;
+}
+.table_box > table {
+    margin-bottom: 0.2rem;
+    border-collapse: collapse;
+}
+.table_box > table tr:nth-child(2n) {
+    background-color: #E7E6F4;
+}
+.table_box > table tr:nth-child(2n+3) {
+    background-color: #FFF;
+}
+.table_box > table th,
+.table_box > table td {
+    padding: 0.2rem 0.35rem;
+    text-align: center;
+    white-space: nowrap;
+}
+.table_box > table th {
+    font-weight: 700;
+}
+.table_box > table th:first-child,
+.table_box > table td:first-child {
+    padding-left: 0.4rem;
+}
+.table_box > table th:last-child,
+.table_box > table td:last-child {
+    padding-right: 0.4rem;
+}
+/* =================== */
