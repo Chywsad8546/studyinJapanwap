@@ -16,14 +16,14 @@
     <title>首页</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <script src="/js/responsive.js"></script>
-    <link rel="stylesheet" href="/css/swiper-3.4.2.min.css">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/index.css">
+    <script src="js/responsive.js"></script>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <h1><img src="/images/logow.png" width="100%" height="100%" alt="英才"></h1>
+        <h1><img src="images/logow.png" width="100%" height="100%" alt="英才"></h1>
         <i class="base_icon menu"></i>
         <div class="header_layer">
             <ul>

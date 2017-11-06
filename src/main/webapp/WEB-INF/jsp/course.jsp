@@ -16,13 +16,13 @@
     <title>精品课程</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <script src="/js/responsive.js"></script>
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/course.css">
+    <script src="js/responsive.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/course.css">
 </head>
 <body>
     <header>
-        <h1><img src="/images/logow.png" width="100%" height="100%" alt="英才"></h1>
+        <h1><img src="images/logow.png" width="100%" height="100%" alt="英才"></h1>
         <i class="base_icon menu"></i>
         <div class="header_layer">
             <ul>
@@ -224,7 +224,7 @@
         </form>
     </div>
 
-    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
     <script>
         $('.menu').on('click',function () {
             $(this).toggleClass('close');
