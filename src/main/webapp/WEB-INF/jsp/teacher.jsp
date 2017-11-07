@@ -16,13 +16,13 @@
     <title>优秀师资</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <script src="/js/responsive.js"></script>
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/teacher.css">
+    <script src="js/responsive.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/teacher.css">
 </head>
 <body>
     <header>
-        <h1><img src="/images/logow.png" width="100%" height="100%" alt="英才"></h1>
+        <h1><img src="images/logow.png" width="100%" height="100%" alt="英才"></h1>
         <i class="base_icon menu"></i>
         <div class="header_layer">
             <ul>
