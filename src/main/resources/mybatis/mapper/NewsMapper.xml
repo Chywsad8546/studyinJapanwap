@@ -3,7 +3,7 @@
 <mapper namespace="com.study.dao.NewsMapper">
 
     <select id="newslist" resultType="com.study.entity.Article">
-         SELECT id,title,imgurl,hits,updatetime,description FROM cms_article
+         SELECT * FROM cms_article
          <where>
              <if test="article.class1!=0">
                  AND class1=#{article.class1}
@@ -24,6 +24,12 @@
             </if>
             AND display=1 AND del=0
         </where>
+    </select>
+
+    <select id="renews" resultType="com.study.entity.Article">
+        SELECT * FROM cms_article
+        WHERE class2=43
+        ORDER BY recommend DESC , top DESC , updatetime DESC LIMIT 0,3
     </select>
 
     <select id="newsdetail" resultType="com.study.entity.Article">

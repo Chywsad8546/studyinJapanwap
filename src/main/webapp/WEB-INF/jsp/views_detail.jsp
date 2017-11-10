@@ -56,18 +56,18 @@
     </header>
 
     <section>
-        <img src="images/news_list_pic.jpg" width="100%" alt="">
+        <img src="${article.imgurl}" width="100%" alt="">
         <div class="views_title">
-            <h2>日本经营学专业优势介绍</h2>
+            <h2>${article.title}</h2>
             <div class="views_time clearfix">
-                <p class="views"><i class="base_icon"></i>1024</p>
-                <p class="time">2017-10-01 10:33</p>
+                <p class="views"><i class="base_icon"></i>${article.hits}</p>
+                <p class="time">${article.updatetime}</p>
             </div>
         </div>
     </section>
 
     <section class="detail_cont">
-        <p>日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势介绍日本经营学专业优势</p>
+        <p>${article.content}</p>
     </section>
 
     <section class="share_box clearfix">
@@ -83,51 +83,23 @@
     <section class="space_mb">
         <h2 class="detail_recommend">英才精彩推荐</h2>
         <ul>
+            <c:forEach var="article" items="${renews}">
             <li>
-                <a class="list_item clearfix" href="#">
+                <a class="list_item clearfix" href="news/newsdetail.html?id=${article.id}">
                     <div class="list_item_pic">
-                        <img width="100%" src="images/news_list_pic.jpg" alt="">
+                        <img width="100%" height="100%" src="${article.imgurl}" alt="">
                     </div>
                     <div class="list_item_cont">
-                        <h5>日本经营学专业优势介绍</h5>
-                        <p>日本经营学专业优势介绍日</p>
+                        <h5>${article.title}</h5>
+                        <p>${article.description}</p>
                         <div class="views_time clearfix">
-                            <p class="views"><i class="base_icon"></i>1024</p>
-                            <p class="time">2017-10-01 10:33</p>
+                            <p class="views"><i class="base_icon"></i>${article.hits}</p>
+                            <p class="time">${article.updatetime}</p>
                         </div>
                     </div>
                 </a>
             </li>
-            <li>
-                <a class="list_item clearfix" href="#">
-                    <div class="list_item_pic">
-                        <img width="100%" src="images/news_list_pic.jpg" alt="">
-                    </div>
-                    <div class="list_item_cont">
-                        <h5>日本经营学专业优势介绍</h5>
-                        <p>日本经营学专业优势介绍日</p>
-                        <div class="views_time clearfix">
-                            <p class="views"><i class="base_icon"></i>1024</p>
-                            <p class="time">2017-10-01 10:33</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a class="list_item clearfix" href="#">
-                    <div class="list_item_pic">
-                        <img width="100%" src="images/news_list_pic.jpg" alt="">
-                    </div>
-                    <div class="list_item_cont">
-                        <h5>日本经营学专业优势介绍</h5>
-                        <p>日本经营学专业优势介绍日</p>
-                        <div class="views_time clearfix">
-                            <p class="views"><i class="base_icon"></i>1024</p>
-                            <p class="time">2017-10-01 10:33</p>
-                        </div>
-                    </div>
-                </a>
-            </li>
+            </c:forEach>
         </ul>
     </section>
 
@@ -136,29 +108,42 @@
         <img src="images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
-        <form action="">
-            <input type="text" placeholder="姓名">
-            <input type="tel" placeholder="电话号码">
+        <form  onsubmit="tijiao()" action="assess.html">
+            <input name="name" type="text" placeholder="姓名">
+            <input type="tel" name="tel" placeholder="电话号码">
             <div class="textarea_box">
-                <textarea name="" id="" cols="30" rows="10" placeholder="留言"></textarea>
-                <p>还可以输入<em>90</em>字</p>
+                <textarea oninput="gbcoun(this)" required="required" name="ass" id="" cols="30" rows="10" placeholder="留言"></textarea>
+                <p>还可以输入<em id="ping">100</em>字</p>
             </div>
             <input type="submit" value="提交评估">
             <p>专业顾问将尽快与您联系</p>
         </form>
+        <script language="javascript" >
+            function gbcoun(item) {
+                var pval=item.value.length;
+                var sheng=100-pval;
+                document.getElementById("ping").innerHTML=sheng;
+            }
+
+            function tijiao() {
+                alert("评估成功，留意电话")
+                return true;
+            }
+
+        </script>
     </section>
 
     <footer>
         <p>明德笃实，筑梦名校</p>
-        <a href="tel:4008-517-517"><i class="base_icon tel"></i>4008-517-517</a>
+        <a href="tel:4008-517-517"><i class="base_icon tel"></i>400-0888-069</a>
         <div class="wechat_weibo">
             <a href="#"><i class="base_icon wechat"></i>官方微信</a>
             <a href="#"><i class="base_icon weibo"></i>官方微博</a>
         </div>
         <div class="infomation">
-            <span>Email: support@yingcai.com</span>
-            <span class="infomation_add">Add: 北京市朝阳区西大望路XX大厦3层</span>
-            <span>© 2017 北京英才进学塾出国留学咨询服务有限公司 保留一切权利</span>
+            <span>Email: service@ycjxschool.com</span>
+            <span class="infomation_add">Add: 北京市朝阳区百子湾路29号楼3层A02室</span>
+            <span>© 2017 北京中天艺圣文化传媒有限公司 保留一切权利</span>
         </div>
     </footer>
 
