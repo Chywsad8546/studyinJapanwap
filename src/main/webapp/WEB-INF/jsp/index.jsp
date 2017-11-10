@@ -59,7 +59,15 @@
     <section class="banner">
         <div class="swiper-container banner_swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide banner_item">
+                <c:forEach var="banner" items="${bannerlist}">
+                    <div class="swiper-slide banner_item">
+                        <img src="${banner.imgurl}" width="100%" alt="${banner.title}">
+                        <%--<p>${banner.title}</p>--%>
+                        <div class="banner_mask"></div>
+                    </div>
+                </c:forEach>
+
+            <%--    <div class="swiper-slide banner_item">
                     <img src="images/index_banner.jpg" width="100%" alt="明德笃实，筑梦名校">
                     <p>明德笃实，筑梦名校</p>
                     <div class="banner_mask"></div>
@@ -68,23 +76,18 @@
                     <img src="images/index_banner.jpg" width="100%" alt="明德笃实，筑梦名校">
                     <p>明德笃实，筑梦名校</p>
                     <div class="banner_mask"></div>
-                </div>
-                <div class="swiper-slide banner_item">
-                    <img src="images/index_banner.jpg" width="100%" alt="明德笃实，筑梦名校">
-                    <p>明德笃实，筑梦名校</p>
-                    <div class="banner_mask"></div>
-                </div>
+                </div>--%>
             </div>
         </div>
     </section>
 
     <section class="assess_consult">
         <h2>免费获取专业评估，专业顾问极速响应</h2>
-        <form action="">
-            <input type="text" placeholder="姓名">
-            <input type="tel" placeholder="电话号码">
+        <form onsubmit="tijiao()" action="assess.html">
+            <input required="required" name="name" type="text" placeholder="姓名">
+            <input required="required" type="tel" name="tel" placeholder="电话号码">
             <div class="form_group clearfix">
-                <input type="text" class="assess" value="立即评估">
+                <input type="submit" class="assess" value="立即评估">
                 <input type="text" class="consult" value="在线咨询">
             </div>
         </form>
@@ -318,7 +321,7 @@
                 <li>
                     <a class="list_item clearfix" href="news/newsdetail.html?id=${item.id}">
                         <div class="list_item_pic">
-                            <img width="100%" src="images/news_list_pic.jpg" alt="">
+                            <img height="100%" width="100%" src="${url}${item.imgurl}" alt="">
                         </div>
                         <div class="list_item_cont">
                             <h5>${item.title}</h5>
@@ -331,7 +334,7 @@
                     </a>
                 </li>
             </c:forEach>
-         <%--   <li>
+      <%--     <li>
                 <a class="list_item clearfix" href="#">
                     <div class="list_item_pic">
                         <img width="100%" src="images/news_list_pic.jpg" alt="">
@@ -376,6 +379,7 @@
                     </div>
                 </a>
             </li>--%>
+
         </ul>
         <a class="more_info" href="news/morenews.html">更多资讯</a>
     </section>
@@ -383,14 +387,7 @@
     <section class="faqs">
         <i class="index_icon"></i>
         <h2 class="module_title">Q&A</h2>
-        <div class="faqs_group">
-            <h4><i class="index_icon"></i>考取日本大学，需要准备哪些考试呢？</h4>
-            <p><i class="index_icon"></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
-        </div>
-        <div class="faqs_group">
-            <h4><i class="index_icon"></i>考取日本大学，需要准备哪些考试呢？</h4>
-            <p><i class="index_icon"></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
-        </div>
+
         <div class="faqs_group">
             <h4><i class="index_icon"></i>考取日本大学，需要准备哪些考试呢？</h4>
             <p><i class="index_icon"></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
@@ -402,50 +399,57 @@
         <img src="images/assessment_pic.png" width="100%" class="assessment_pic" alt="JAPAN">
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
-        <form action="">
-            <input type="text" placeholder="姓名">
-            <input type="tel" placeholder="电话号码">
+        <form onsubmit="tijiao()" action="assess.html">
+            <input name="name" type="text" required="required" placeholder="姓名">
+            <input name="tel" type="tel" required="required" placeholder="电话号码">
             <div class="textarea_box">
-                <textarea name="" id="" cols="30" rows="10" placeholder="留言"></textarea>
-                <p>还可以输入<em>90</em>字</p>
+                <textarea oninput="gbcoun(this)" required="required" name="ass" id="" cols="30" rows="10" placeholder="留言"></textarea>
+                <p>还可以输入<em id="ping">100</em>字</p>
             </div>
             <input type="submit" value="提交评估">
             <p>专业顾问将尽快与您联系</p>
         </form>
+        <script language="javascript" >
+            function gbcoun(item) {
+                var pval=item.value.length;
+                var sheng=100-pval;
+                document.getElementById("ping").innerHTML=sheng;
+            }
+
+            function tijiao() {
+                alert("评估成功，留意电话")
+                return true;
+            }
+
+        </script>
     </section>
 
     <section class="cooperate">
         <h2>合作媒体</h2>
         <ul>
-            <li><img src="" width="100%" height="100%" alt=""></li>
-            <li><img src="" width="100%" height="100%" alt=""></li>
-            <li><img src="" width="100%" height="100%" alt=""></li>
-            <li><img src="" width="100%" height="100%" alt=""></li>
-            <li><img src="" width="100%" height="100%" alt=""></li>
-            <li><img src="" width="100%" height="100%" alt=""></li>
+            <c:forEach items="${meiti}" var="item">
+                <li><img src="${url}${item.webLogo}" width="100%" height="100%" alt="${item.webTitle}"></li>
+            </c:forEach>
         </ul>
         <h2>合作机构</h2>
         <ul>
-            <li><img src="" width="100%" height="100%" alt=""></li>
-            <li><img src="" width="100%" height="100%" alt=""></li>
-            <li><img src="" width="100%" height="100%" alt=""></li>
-            <li><img src="" width="100%" height="100%" alt=""></li>
-            <li><img src="" width="100%" height="100%" alt=""></li>
-            <li><img src="" width="100%" height="100%" alt=""></li>
+            <c:forEach items="${jigou}" var="item">
+                <li><img src="${url}${item.webLogo}" width="100%" height="100%" alt="${item.webTitle}"></li>
+            </c:forEach>
         </ul>
     </section>
 
     <footer>
         <p>明德笃实，筑梦名校</p>
-        <a href="tel:4008-517-517"><i class="base_icon tel"></i>4008-517-517</a>
+        <a href="tel:4008-517-517"><i class="base_icon tel"></i>400-0888-069</a>
         <div class="wechat_weibo">
             <a href="#"><i class="base_icon wechat"></i>官方微信</a>
             <a href="#"><i class="base_icon weibo"></i>官方微博</a>
         </div>
         <div class="infomation">
-            <span>Email: support@yingcai.com</span>
-            <span class="infomation_add">Add: 北京市朝阳区西大望路XX大厦3层</span>
-            <span>© 2017 北京英才进学塾出国留学咨询服务有限公司 保留一切权利</span>
+            <span>Email: service@ycjxschool.com</span>
+            <span class="infomation_add">Add: 北京市朝阳区百子湾路29号楼3层A02室</span>
+            <span>©  2017 北京中天艺圣文化传媒有限公司 保留一切权利</span>
         </div>
     </footer>
 

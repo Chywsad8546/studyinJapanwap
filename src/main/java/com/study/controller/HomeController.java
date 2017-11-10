@@ -7,8 +7,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -24,8 +26,10 @@ public class HomeController {
     @RequestMapping(value = "/")
     public ModelAndView homePage() {
         ModelAndView view = new ModelAndView("index");
-
-        List<Article> newslist=hm.newslist(new ImformationFinal());
+        //ModelAndView view = new ModelAndView("mode");
+        List<Article>newslist=hm.newslist();
+        List<FriendlyLink>meiti=hm.meiti();
+        List<FriendlyLink>jigou=hm.jigou();
 
 
         Img img=new Img();
@@ -36,16 +40,36 @@ public class HomeController {
         }*/
         for (int i=0;i<bannerList.size();i++){
             Img it= bannerList.get(i);
-            it.setImgurl(it.getImgurl().replaceAll("\\.\\.\\/", WebAdress.url));
+            it.setImgurl(it.getImgurl().replaceAll("\\.\\.\\/",WebAdress.url));
             bannerList.set(i,it);
             //    System.out.println(bannerList.get(i).getImgurl());
         }
 
         view.addObject("bannerlist",bannerList);
         view.addObject("newslist",newslist);
-        // view.addObject("url",WebAdress.url);
-
+        view.addObject("url",WebAdress.url);
+        view.addObject("meiti",meiti);
+        view.addObject("jigou",jigou);
         logger.trace("Welcome to Study-In-Japan!");
+        return view;
+    }
+
+
+    //提交评估
+    @RequestMapping(value = "/assess.html")
+    public ModelAndView assess(HttpServletRequest request,
+                               @RequestParam(value = "ass", defaultValue = "", required = false)String ass) {
+        ModelAndView view=new ModelAndView("redirect:/");
+
+        String name=request.getParameter("name");
+        String phone=request.getParameter("tel");
+        Assess assess=new Assess();
+        assess.setAname(name);
+        assess.setChuli(1);
+        assess.setPhone(phone);
+        assess.setContent(ass);
+        hm.addassess(assess);
+
         return view;
     }
 
