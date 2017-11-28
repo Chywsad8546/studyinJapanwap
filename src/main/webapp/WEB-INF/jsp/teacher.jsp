@@ -67,14 +67,6 @@
             </dd>
         </dl>
         <dl class="tearcher_item clearfix">
-            <dt><img src="images/teacher_2.jpg" width="100%" alt="邓超"></dt>
-            <dd>
-                <h5>邓超</h5>
-                <span>早稻田大学文化构想学部</span>
-                <p>钻研一般入试（日本大学自主招生）、center入试（日本高考）、日本留考<br>多年亲身参加留考、一般入试、center入试<br>主要负责文综+日语+大学校内考及面试</p>
-            </dd>
-        </dl>
-        <dl class="tearcher_item clearfix">
             <dt><img src="images/teacher_3.jpg" width="100%" alt="李沛时"></dt>
             <dd>
                 <h5>李沛时</h5>
