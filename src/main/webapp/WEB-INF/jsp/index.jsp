@@ -18,7 +18,7 @@
     <meta name="keywords" content="">
     <script src="js/responsive.js"></script>
     <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base.css?v=2016">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
