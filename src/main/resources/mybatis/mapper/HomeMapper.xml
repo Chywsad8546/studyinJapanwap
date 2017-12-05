@@ -16,6 +16,10 @@
          ORDER BY recommend DESC , top DESC , updatetime DESC
     </select>
 
+    <select id="erweilist" resultType="com.study.entity.Erweima">
+        SELECT * FROM erweima
+    </select>
+
     <select id="newslist" resultType="com.study.entity.Article">
         SELECT * FROM cms_article WHERE del=0 AND display=1  ORDER BY recommend DESC , top DESC ,updatetime DESC, cms_article.addtime DESC LIMIT 0,3
     </select>

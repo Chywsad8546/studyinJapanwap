@@ -30,6 +30,7 @@ public class HomeController {
         List<Article>newslist=hm.newslist();
         List<FriendlyLink>meiti=hm.meiti();
         List<FriendlyLink>jigou=hm.jigou();
+        List<Erweima>erweimaList=hm.erweilist();
 
 
         Img img=new Img();
@@ -51,6 +52,7 @@ public class HomeController {
         view.addObject("meiti",meiti);
         view.addObject("jigou",jigou);
         logger.trace("Welcome to Study-In-Japan!");
+        view.addObject("erweimalist",erweimaList);
         return view;
     }
 

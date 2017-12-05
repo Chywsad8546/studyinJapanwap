@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="news/newsdetail.html?id=45">
                         关于英才<em>英才について</em>
                     </a>
                 </li>

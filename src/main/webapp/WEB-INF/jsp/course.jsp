@@ -33,7 +33,7 @@
                 </li>
                 <li class="course.html">
                     <a href="course.html">
-                        精品课程<em>プレミアム課程</em>
+                        精品课程<em>プレミア課程</em>
                     </a>
                 </li>
                 <li>
@@ -47,7 +47,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="news/newsdetail.html?id=45">
                         关于英才<em>英才について</em>
                     </a>
                 </li>
@@ -59,6 +59,12 @@
 
 
     <ul class="classify_box">
+        <li id="tt5" >
+            <a id="t5">
+                <h4>文科套餐</h4>
+                <p>文科コース</p>
+            </a>
+        </li>
         <li id="tt1" class="current">
             <a id="t1">
                 <h4>理科套餐</h4>
@@ -85,10 +91,270 @@
         </li>
     </ul>
 
+    <section class="tabs_cont4">
+        <section class="course_cont">
+            <img src="images/course_title_icon.png" class="course_title_icon" alt="">
+            <h3>上半年文科套餐</h3>
+            <div class="examination_courses">
+                <h4>留学考试课程</h4>
+                <ul>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>留考文科综合科目基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>留考文科数学基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>留考日本语基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>6月留考综合科目对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>6月留考数学对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>6月留考日语对策冲刺课程</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i3"></i><p>每年度只开设一期课程，课程有效期内可参加一次</p></div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i4"></i><p>循环滚动开课，课程有效期内课任意参加</p></div>
+            <div class="examination_detail">
+                <p>课次：<span>90</span>节</p>
+                <p>上课时间：2017/8/1 至 2018/7/31 <em>*</em></p>
+                <p><em>*</em> 根据学员具体情况定制</p>
+                <p>上课地点：日本-东京</p>
+            </div>
+            <div class="examination_introduce">
+                <em>课程简介：</em>
+                <p>该课程为基础类课程，在于帮助学生完成留考的基础应试复习和突击，提高通过率；为每位学员提供留学考试及语言的所有规划。</p>
+                <em>适用学员：</em>
+                <p>希望留学日本，有一定日语基础的学员。</p>
+                <em>教学目标：</em>
+                <p>提高学员日语水平，提高应试考试能力。</p>
+            </div>
+            <p class="price_text">获取学费价格</p>
+            <input class="assess_btn" type="text" value="立即评估">
+        </section>
+        <section class="course_cont">
+            <img src="images/course_title_icon.png" class="course_title_icon" alt="">
+            <h3>下半年文科套餐</h3>
+            <div class="examination_courses">
+                <h4>留学考试课程</h4>
+                <ul>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>留考文科综合科目基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>留考文科数学基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>留考日本语基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>11月留考综合科目对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>11月留考数学对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>11月留考日语对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>东京大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>京都大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>东京工业大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>早稻田大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>庆应义塾大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>上智大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>GMARCH・关关同立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>其他人气私立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>名门国公立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>地方国公立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>小论文面试等综合指导课程</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i3"></i><p>每年度只开设一期课程，课程有效期内可参加一次</p></div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i4"></i><p>循环滚动开课，课程有效期内课任意参加</p></div>
+            <div class="examination_detail">
+                <p>课次：<span>90</span>节</p>
+                <p>上课时间：2017/8/1 至 2018/7/31 <em>*</em></p>
+                <p><em>*</em> 根据学员具体情况定制</p>
+                <p>上课地点：日本-东京</p>
+            </div>
+            <div class="examination_introduce">
+                <em>课程简介：</em>
+                <p>该课程为基础类课程，在于帮助学生完成留考的基础应试复习和突击，提高通过率；为每位学员提供留学考试及语言的所有规划。</p>
+                <em>适用学员：</em>
+                <p>希望留学日本，有一定日语基础的学员。</p>
+                <em>教学目标：</em>
+                <p>提高学员日语水平，提高应试考试能力。</p>
+            </div>
+            <p class="price_text">获取学费价格</p>
+            <input class="assess_btn" type="text" value="立即评估">
+        </section>
+        <section class="course_cont">
+            <img src="images/course_title_icon.png" class="course_title_icon" alt="">
+            <h3>全年文科套餐</h3>
+            <div class="examination_courses">
+                <h4>留学考试课程</h4>
+                <ul>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>留考文科综合科目基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>留考文科数学基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>留考日本语基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>11月留考综合科目对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>11月留考数学对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>11月留考日语对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>6月留考综合科目对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>6月留考数学对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>6月留考日语对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>东京大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>京都大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>一桥大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>早稻田大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>庆应义塾大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>上智大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>GMARCH・关关同立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>其他人气私立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>名门国公立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>地方国公立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>小论文面试等综合指导课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>习题答疑课程</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i3"></i><p>每年度只开设一期课程，课程有效期内可参加一次</p></div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i4"></i><p>循环滚动开课，课程有效期内课任意参加</p></div>
+            <div class="examination_detail">
+                <p>课次：<span>90</span>节</p>
+                <p>上课时间：2017/8/1 至 2018/7/31 <em>*</em></p>
+                <p><em>*</em> 根据学员具体情况定制</p>
+                <p>上课地点：日本-东京</p>
+            </div>
+            <div class="examination_introduce">
+                <em>课程简介：</em>
+                <p>该课程为基础类课程，在于帮助学生完成留考的基础应试复习和突击，提高通过率；为每位学员提供留学考试及语言的所有规划。</p>
+                <em>适用学员：</em>
+                <p>希望留学日本，有一定日语基础的学员。</p>
+                <em>教学目标：</em>
+                <p>提高学员日语水平，提高应试考试能力。</p>
+            </div>
+            <p class="price_text">获取学费价格</p>
+            <input class="assess_btn" type="text" value="立即评估">
+        </section>
+    </section>
+
     <section class="tabs_cont">
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>上半年理科套餐01</h3>
+            <h3>上半年理科套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -133,7 +399,7 @@
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>下半年理科套餐01</h3>
+            <h3>下半年理科套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -211,7 +477,7 @@
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>全年理科套餐01</h3>
+            <h3>全年理科套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -302,7 +568,7 @@
     <section class="tabs_cont1" hidden>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>上半年全科套餐01</h3>
+            <h3>上半年全科套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -395,7 +661,7 @@
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>下半年全科套餐01</h3>
+            <h3>下半年全科套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -518,7 +784,7 @@
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>全半年全科套餐01</h3>
+            <h3>全半年全科套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -650,7 +916,7 @@
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>全半年全科强化套餐01</h3>
+            <h3>全半年全科强化套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -788,7 +1054,7 @@
     <section class="tabs_cont2" hidden>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>2年名门大学套餐01</h3>
+            <h3>理科—2年名门大学套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -926,7 +1192,7 @@
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>2年安心进学套餐01</h3>
+            <h3>理科—2年安心进学套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -1061,7 +1327,7 @@
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>2年精品进学套餐01</h3>
+            <h3>理科—2年精品进学套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -1215,12 +1481,542 @@
             <p class="price_text">获取学费价格</p>
             <input class="assess_btn" type="text" value="立即评估">
         </section>
+
+        <section class="course_cont">
+            <img src="images/course_title_icon.png" class="course_title_icon" alt="">
+            <h3>文科—2年名门大学套餐</h3>
+            <div class="examination_courses">
+                <h4>留学考试课程</h4>
+                <ul>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考文科综合科目基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考文科数学基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考日本语基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>11月留考综合科目对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>11月留考数学对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>11月留考日语对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>6月留考综合科目对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>6月留考数学对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>6月留考日语对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>各科视频课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>一对一志望理由书修改</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>一对一面试指导</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>东京大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>京都大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>一桥大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>早稻田大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>庆应义塾大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>上智大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>GMARCH・关关同立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>其他人气私立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>名门国公立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>地方国公立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>小论文面试等综合指导课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>留考前集中特训课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>安心保证</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>习题答疑课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N1能力考对策课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N2能力考对策课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>能力考对策课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N1能力考考前冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N2能力考考前冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N5-N4能力考基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考15000词汇课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>TOEFL60分基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>TOEFL80分基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>TOEIC考前冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>英语基础课程</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i3"></i><p>每年度只开设一期课程，课程有效期内可参加一次</p></div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i4"></i><p>循环滚动开课，课程有效期内课任意参加</p></div>
+            <div class="examination_detail">
+                <p>课次：<span>90</span>节</p>
+                <p>上课时间：2017/8/1 至 2018/7/31 <em>*</em></p>
+                <p><em>*</em> 根据学员具体情况定制</p>
+                <p>上课地点：日本-东京</p>
+            </div>
+            <div class="examination_introduce">
+                <em>课程简介：</em>
+                <p>该课程为基础类课程，在于帮助学生完成留考的基础应试复习和突击，提高通过率；为每位学员提供留学考试及语言的所有规划。</p>
+                <em>适用学员：</em>
+                <p>希望留学日本，有一定日语基础的学员。</p>
+                <em>教学目标：</em>
+                <p>提高学员日语水平，提高应试考试能力。</p>
+            </div>
+            <p class="price_text">获取学费价格</p>
+            <input class="assess_btn" type="text" value="立即评估">
+        </section>
+        <section class="course_cont">
+            <img src="images/course_title_icon.png" class="course_title_icon" alt="">
+            <h3>文科—2年安心进学套餐</h3>
+            <div class="examination_courses">
+                <h4>留学考试课程</h4>
+                <ul>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考文科综合科目基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考文科数学基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考日本语基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>11月留考综合科目对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>11月留考数学对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>11月留考日语对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>6月留考综合科目对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>6月留考数学对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>6月留考日语对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>各科视频课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>一对一面试指导</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>东京大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>京都大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>一桥大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>早稻田大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>庆应义塾大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>上智大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>GMARCH・关关同立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>其他人气私立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>名门国公立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>地方国公立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>小论文面试等综合指导课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>留考前集中特训课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i1"></i>
+                        <p>名门大学保证</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>习题答疑课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N1能力考对策课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N2能力考对策课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>能力考对策课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N1能力考考前冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N2能力考考前冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N5-N4能力考基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考15000词汇课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>TOEFL60分基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>TOEFL80分基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>TOEIC考前冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>英语基础课程</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i3"></i><p>每年度只开设一期课程，课程有效期内可参加一次</p></div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i4"></i><p>循环滚动开课，课程有效期内课任意参加</p></div>
+            <div class="examination_detail">
+                <p>课次：<span>90</span>节</p>
+                <p>上课时间：2017/8/1 至 2018/7/31 <em>*</em></p>
+                <p><em>*</em> 根据学员具体情况定制</p>
+                <p>上课地点：日本-东京</p>
+            </div>
+            <div class="examination_introduce">
+                <em>课程简介：</em>
+                <p>该课程为基础类课程，在于帮助学生完成留考的基础应试复习和突击，提高通过率；为每位学员提供留学考试及语言的所有规划。</p>
+                <em>适用学员：</em>
+                <p>希望留学日本，有一定日语基础的学员。</p>
+                <em>教学目标：</em>
+                <p>提高学员日语水平，提高应试考试能力。</p>
+            </div>
+            <p class="price_text">获取学费价格</p>
+            <input class="assess_btn" type="text" value="立即评估">
+        </section>
+        <section class="course_cont">
+            <img src="images/course_title_icon.png" class="course_title_icon" alt="">
+            <h3>文科—2年精品进学套餐</h3>
+            <div class="examination_courses">
+                <h4>留学考试课程</h4>
+                <ul>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考文科综合科目基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考文科数学基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考日本语基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>11月留考综合科目对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>11月留考数学对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>11月留考日语对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>6月留考综合科目对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>6月留考数学对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>6月留考日语对策冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考全科小班辅导课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>东京大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>京都大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>东京工业大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>早稻田大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>庆应义塾大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>上智大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>GMARCH・关关同立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>其他人气私立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>名门国公立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>地方国公立大学校内考课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>小论文面试等综合指导课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>各科视频课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>名门大学保证</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>一对一面试指导</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>一对一志望理由书修改</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考前集中特训课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>安心保证</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>习题答疑课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N1能力考对策课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N2能力考对策课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>能力考对策课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N1能力考考前冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N2能力考考前冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>N5-N4能力考基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>留考15000词汇课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>TOEFL60分基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>TOEFL80分基础课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>TOEIC考前冲刺课程</p>
+                    </li>
+                    <li>
+                        <i class="examination_icon style_i2"></i>
+                        <p>英语基础课程</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i3"></i><p>每年度只开设一期课程，课程有效期内可参加一次</p></div>
+            <div class="examination_courses_tips"><i class="examination_icon style_i4"></i><p>循环滚动开课，课程有效期内课任意参加</p></div>
+            <div class="examination_detail">
+                <p>课次：<span>90</span>节</p>
+                <p>上课时间：2017/8/1 至 2018/7/31 <em>*</em></p>
+                <p><em>*</em> 根据学员具体情况定制</p>
+                <p>上课地点：日本-东京</p>
+            </div>
+            <div class="examination_introduce">
+                <em>课程简介：</em>
+                <p>该课程为基础类课程，在于帮助学生完成留考的基础应试复习和突击，提高通过率；为每位学员提供留学考试及语言的所有规划。</p>
+                <em>适用学员：</em>
+                <p>希望留学日本，有一定日语基础的学员。</p>
+                <em>教学目标：</em>
+                <p>提高学员日语水平，提高应试考试能力。</p>
+            </div>
+            <p class="price_text">获取学费价格</p>
+            <input class="assess_btn" type="text" value="立即评估">
+        </section>
     </section>
 
     <section class="tabs_cont3" hidden>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>英语套餐01</h3>
+            <h3>英语套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -1259,7 +2055,7 @@
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>日语套餐01</h3>
+            <h3>日语套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -1307,7 +2103,7 @@
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>语言强化套餐01</h3>
+            <h3>语言强化套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -1401,7 +2197,7 @@
     <img src="images/side_ad.png" class="side_ad" alt="2018夏季入学优惠">
     <div class="side_assess_consult">
         <img src="images/assess_icon.png" class="free_assess" alt="免费评估">
-        <img src="images/consult_icon.png" alt="在线咨询">
+        <img onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" src="images/consult_icon.png" alt="在线咨询">
     </div>
 
     <div class="assess_pop">
@@ -1435,10 +2231,12 @@
             $('.tabs_cont1').hide();
             $('.tabs_cont2').hide();
             $('.tabs_cont3').hide();
+            $('.tabs_cont4').hide();
             $('#tt1').addClass("current");
             $('#tt2').removeClass("current");
             $('#tt3').removeClass("current");
             $('#tt4').removeClass("current");
+            $('#tt5').removeClass("current");
         })
         $('#t2').on('click',function () {
             $('.tabs_cont').hide();
@@ -1449,6 +2247,8 @@
             $('#tt2').addClass("current");
             $('#tt3').removeClass("current");
             $('#tt4').removeClass("current");
+            $('#tt5').removeClass("current");
+            $('.tabs_cont4').hide();
         })
         $('#t3').on('click',function () {
             $('.tabs_cont').hide();
@@ -1459,6 +2259,8 @@
             $('#tt2').removeClass("current");
             $('#tt3').addClass("current");
             $('#tt4').removeClass("current");
+            $('#tt5').removeClass("current");
+            $('.tabs_cont4').hide();
         })
         $('#t4').on('click',function () {
             $('.tabs_cont').hide();
@@ -1469,6 +2271,20 @@
             $('#tt2').removeClass("current");
             $('#tt3').removeClass("current");
             $('#tt4').addClass("current");
+            $('#tt5').removeClass("current");
+            $('.tabs_cont4').hide();
+        })
+        $('#t5').on('click',function () {
+            $('.tabs_cont').hide();
+            $('.tabs_cont1').hide();
+            $('.tabs_cont2').hide();
+            $('.tabs_cont3').hide();
+            $('.tabs_cont4').show();
+            $('#tt1').removeClass("current");
+            $('#tt2').removeClass("current");
+            $('#tt3').removeClass("current");
+            $('#tt4').removeClass("current");
+            $('#tt5').addClass("current");
         })
     </script>
 </body>

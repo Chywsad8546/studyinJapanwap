@@ -48,7 +48,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="news/newsdetail.html?id=45">
                         关于英才<em>英才について</em>
                     </a>
                 </li>
@@ -88,7 +88,7 @@
             <input required="required" type="tel" name="tel" placeholder="电话号码">
             <div class="form_group clearfix">
                 <input type="submit" class="assess" value="立即评估">
-                <input type="text" class="consult" value="在线咨询">
+                <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" type="text" class="consult" value="在线咨询">
             </div>
         </form>
     </section>
@@ -108,7 +108,7 @@
             <dt><img src="images/superiority_item_pic2.png" width="100%" alt="师资优秀"></dt>
             <dd>
                 <h3>师资优秀</h3>
-                <span>優秀な教師チーム</span>
+                <span>優秀な教師</span>
                 <p>所有英才教师均为国际水准的金牌教师，经验丰富，有众多成功案例积累的独创课程。</p>
             </dd>
         </dl>
@@ -175,7 +175,7 @@
 
     <section class="case">
         <i class="index_icon"></i>
-        <h2 class="module_title">成功案例  ケース</h2>
+        <h2 class="module_title">成功案例  合格実績</h2>
 
         <div class="case_swiper_wrapper">
             <div class="swiper-container case_swiper">
@@ -315,7 +315,7 @@
 
     <section class="abroad_infomation">
         <i class="index_icon"></i>
-        <h2 class="module_title">留学资讯  ケース</h2>
+        <h2 class="module_title">留学资讯  留学の情報</h2>
         <ul>
             <c:forEach var="item" items="${newslist}">
                 <li>
@@ -443,8 +443,17 @@
         <p>明德笃实，筑梦名校</p>
         <a href="tel:4008-517-517"><i class="base_icon tel"></i>400-0888-069</a>
         <div class="wechat_weibo">
-            <a href="#"><i class="base_icon wechat"></i>官方微信</a>
-            <a href="#"><i class="base_icon weibo"></i>官方微博</a>
+            <c:forEach begin="0" end="1"  var="index" >
+                <c:if test="${index==0}">
+                    <div style="width: 300px;float: left" ><img src="${url}${erweimalist[0].url}" style="height: 150px"></i><div>${erweimalist[0].name}</div></div>
+                </c:if>
+                <c:if test="${index==1}">
+                    <div><img src="${url}${erweimalist[1].url}" style="height: 150px"></i><div>${erweimalist[1].name}</div></div>
+                </c:if>
+
+            </c:forEach>
+
+
         </div>
         <div class="infomation">
             <span>Email: service@ycjxschool.com</span>
