@@ -182,127 +182,186 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide case_item">
                         <div class="student_msg clearfix">
-                            <div class="student_pic"><img src="img/case_pic1.png" width="100%" alt="刘思垒"></div>
+                            <div class="student_pic"><img src="images/wustudent.png" width="100%" alt="吴同学"></div>
                             <div class="message">
-                                <h6>刘思垒同学</h6>
-                                <p>北京林业大学  大四</p>
-                                <p>专业：英语</p>
+                                <h6>吴同学</h6>
+                                <p>高中毕业</p>
                             </div>
                         </div>
                         <div class="student_detail_msg emphasis">
                             <dl class="clearfix">
                                 <dt>录取院校：</dt>
-                                <dd>东京大学 学際情報学府 学際情報学专业</dd>
+                                <dd>早稻田 创造理工学部</dd>
                             </dl>
                             <dl class="clearfix">
                                 <dt>日语：</dt>
-                                <dd>N1</dd>
+                                <dd>N2</dd>
                             </dl>
                             <dl class="clearfix">
-                                <dt>GPA成绩：</dt>
-                                <dd>3.2</dd>
-                            </dl>
-                            <dl class="clearfix">
-                                <dt>入学季：</dt>
-                                <dd>2016.10</dd>
+                                <dt>其他科目：</dt>
+                                <dd>基础牢固</dd>
                             </dl>
                         </div>
                         <div class="student_detail_msg">
                             <dl class="clearfix">
                                 <dt>优势：</dt>
-                                <dd>出身背景好，日语、英语成绩具备，非常配合。</dd>
+                                <dd>日语基础较好，其他科目基础不错</dd>
                             </dl>
                             <dl class="clearfix">
                                 <dt>劣势：</dt>
-                                <dd>GPA不够高，对于申请没有自信，数学工科成绩不理想。</dd>
+                                <dd>择校十分敷衍</dd>
                             </dl>
                             <dl class="clearfix">
                                 <dt>英才辅导：</dt>
-                                <dd>快速帮助学生精准分析弱势以及选定导师进行弱势课题的学习，突出学生优势亮点；关心学生状态并协助学生自我调整。</dd>
+                                <dd>分析学生强弱项并进行针对辅导</dd>
                             </dl>
                         </div>
                     </div>
                     <div class="swiper-slide case_item">
                         <div class="student_msg clearfix">
-                            <div class="student_pic"><img src="img/case_pic1.png" width="100%" alt="刘思垒"></div>
+                            <div class="student_pic"><img src="images/yanstudent.png" width="100%" alt="廖同学"></div>
                             <div class="message">
-                                <h6>刘思垒同学</h6>
-                                <p>北京林业大学  大四</p>
-                                <p>专业：英语</p>
+                                <h6>廖同学</h6>
+                                <p>高中毕业</p>
                             </div>
                         </div>
                         <div class="student_detail_msg emphasis">
                             <dl class="clearfix">
                                 <dt>录取院校：</dt>
-                                <dd>东京大学 学際情報学府 学際情報学专业</dd>
+                                <dd>早稻田 基干理工学部</dd>
                             </dl>
                             <dl class="clearfix">
                                 <dt>日语：</dt>
-                                <dd>N1</dd>
+                                <dd>N2</dd>
                             </dl>
                             <dl class="clearfix">
-                                <dt>GPA成绩：</dt>
-                                <dd>3.2</dd>
-                            </dl>
-                            <dl class="clearfix">
-                                <dt>入学季：</dt>
-                                <dd>2016.10</dd>
+                                <dt>其他科目：</dt>
+                                <dd>较好</dd>
                             </dl>
                         </div>
                         <div class="student_detail_msg">
                             <dl class="clearfix">
                                 <dt>优势：</dt>
-                                <dd>出身背景好，日语、英语成绩具备，非常配合。</dd>
+                                <dd>三科成绩比较平均，自身也非常努力</dd>
                             </dl>
                             <dl class="clearfix">
                                 <dt>劣势：</dt>
-                                <dd>GPA不够高，对于申请没有自信，数学工科成绩不理想。</dd>
+                                <dd>目标比较模糊</dd>
                             </dl>
                             <dl class="clearfix">
                                 <dt>英才辅导：</dt>
-                                <dd>快速帮助学生精准分析弱势以及选定导师进行弱势课题的学习，突出学生优势亮点；关心学生状态并协助学生自我调整。</dd>
+                                <dd>与学生多次面谈确定将来志向，并针对留考以及校内考帮助学生提高成绩</dd>
                             </dl>
                         </div>
                     </div>
                     <div class="swiper-slide case_item">
                         <div class="student_msg clearfix">
-                            <div class="student_pic"><img src="img/case_pic1.png" width="100%" alt="刘思垒"></div>
+                            <div class="student_pic"><img src="images/quanstudent.png" width="100%" alt="权同学"></div>
                             <div class="message">
-                                <h6>刘思垒同学</h6>
-                                <p>北京林业大学  大四</p>
-                                <p>专业：英语</p>
+                                <h6>权同学</h6>
+                                <p>高中毕业</p>
                             </div>
                         </div>
                         <div class="student_detail_msg emphasis">
                             <dl class="clearfix">
                                 <dt>录取院校：</dt>
-                                <dd>东京大学 学際情報学府 学際情報学专业</dd>
+                                <dd>早稻田 创造理工学部</dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>日语：</dt>
+                                <dd>N2</dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>其他科目：</dt>
+                                <dd>较弱</dd>
+                            </dl>
+                        </div>
+                        <div class="student_detail_msg">
+                            <dl class="clearfix">
+                                <dt>优势：</dt>
+                                <dd>由于喜欢日本偶像日语学习非常积极</dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>劣势：</dt>
+                                <dd>除了日语其他科目较差</dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>英才辅导：</dt>
+                                <dd>发挥该学生自身优势，提高日语成绩，针对志向制定辅导计划</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="swiper-slide case_item">
+                        <div class="student_msg clearfix">
+                            <div class="student_pic"><img src="images/xiaostudent.png" width="100%" alt="肖同学"></div>
+                            <div class="message">
+                                <h6>肖同学</h6>
+                                <p>高中毕业</p>
+                            </div>
+                        </div>
+                        <div class="student_detail_msg emphasis">
+                            <dl class="clearfix">
+                                <dt>录取院校：</dt>
+                                <dd>早稻田 政治经济学部</dd>
                             </dl>
                             <dl class="clearfix">
                                 <dt>日语：</dt>
                                 <dd>N1</dd>
                             </dl>
                             <dl class="clearfix">
-                                <dt>GPA成绩：</dt>
-                                <dd>3.2</dd>
-                            </dl>
-                            <dl class="clearfix">
-                                <dt>入学季：</dt>
-                                <dd>2016.10</dd>
+                                <dt>其他科目：</dt>
+                                <dd>很好</dd>
                             </dl>
                         </div>
                         <div class="student_detail_msg">
                             <dl class="clearfix">
                                 <dt>优势：</dt>
-                                <dd>出身背景好，日语、英语成绩具备，非常配合。</dd>
+                                <dd>在国内已确定留学计划，自学过留考科目</dd>
                             </dl>
                             <dl class="clearfix">
                                 <dt>劣势：</dt>
-                                <dd>GPA不够高，对于申请没有自信，数学工科成绩不理想。</dd>
+                                <dd>缺少做题技巧</dd>
                             </dl>
                             <dl class="clearfix">
                                 <dt>英才辅导：</dt>
-                                <dd>快速帮助学生精准分析弱势以及选定导师进行弱势课题的学习，突出学生优势亮点；关心学生状态并协助学生自我调整。</dd>
+                                <dd>该同学基础牢固，主要教授留考以及校内考的做题技巧</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="swiper-slide case_item">
+                        <div class="student_msg clearfix">
+                            <div class="student_pic"><img src="images/tianstudent.png" width="100%" alt="田同学"></div>
+                            <div class="message">
+                                <h6>田同学</h6>
+                                <p>高中毕业</p>
+                            </div>
+                        </div>
+                        <div class="student_detail_msg emphasis">
+                            <dl class="clearfix">
+                                <dt>录取院校：</dt>
+                                <dd>明治大学 商学部  </dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>日语：</dt>
+                                <dd>N2</dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>其他科目：</dt>
+                                <dd>中等</dd>
+                            </dl>
+                        </div>
+                        <div class="student_detail_msg">
+                            <dl class="clearfix">
+                                <dt>优势：</dt>
+                                <dd>接受能力高，语感较好</dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>劣势：</dt>
+                                <dd>对日语以外的科目学习欲望较低</dd>
+                            </dl>
+                            <dl class="clearfix">
+                                <dt>英才辅导：</dt>
+                                <dd>分析学生强弱项并进行针对辅导</dd>
                             </dl>
                         </div>
                     </div>
@@ -392,7 +451,7 @@
             <h4><i class="index_icon"></i>考取日本大学，需要准备哪些考试呢？</h4>
             <p><i class="index_icon"></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
         </div>
-        <a class="more_info" href="#">更多资讯</a>
+        <a class="more_info" href="queandanswer.html">更多咨询</a>
     </section>
 
     <section class="assessment">

@@ -85,6 +85,12 @@ public class HomeController {
         return view;
     }
 
+    @RequestMapping(value = "/queandanswer.html")
+    public  ModelAndView queandanswer() {
+        ModelAndView view = new ModelAndView("queAndanswer");
+        return view;
+    }
+
     /**
      * 优秀师资
      * @return
