@@ -154,8 +154,14 @@
         <p>明德笃实，筑梦名校</p>
         <a href="tel:4008-517-517"><i class="base_icon tel"></i>400-0888-069</a>
         <div class="wechat_weibo">
-            <a href="#"><i class="base_icon wechat"></i>官方微信</a>
-            <a href="#"><i class="base_icon weibo"></i>官方微博</a>
+            <c:forEach begin="0" end="1"  var="index" >
+                <c:if test="${index==0}">
+                    <div style="width: 300px;float: left" ><img src="${url}${erweimalist[0].url}" style="height: 150px"></i><div>${erweimalist[0].name}</div></div>
+                </c:if>
+                <c:if test="${index==1}">
+                    <div><img src="${url}${erweimalist[1].url}" style="height: 150px"></i><div>${erweimalist[1].name}</div></div>
+                </c:if>
+            </c:forEach>
         </div>
         <div class="infomation">
             <span>Email: service@ycjxschool.com</span>

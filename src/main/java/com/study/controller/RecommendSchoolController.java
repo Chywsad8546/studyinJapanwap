@@ -1,5 +1,6 @@
 package com.study.controller;
 
+import com.study.dao.HomeMapper;
 import com.study.dao.RecommendSchoolMapper;
 import com.study.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,9 @@ public class RecommendSchoolController {
     @Autowired
     private RecommendSchoolMapper rc;
 
+    @Autowired
+    private HomeMapper hm;
+
     @RequestMapping("/list")
     public ModelAndView schoollist(HttpServletRequest request,
                                    @RequestParam(value = "pnow", defaultValue = "1", required = false) int pagenow,
@@ -42,6 +46,8 @@ public class RecommendSchoolController {
         view.addObject("schools",schools);
         view.addObject("page",pg);
         view.addObject("url", WebAdress.url);
+        List<Erweima>erweimaList=hm.erweilist();
+        view.addObject("erweimalist",erweimaList);
         return view;
     }
 
@@ -91,6 +97,8 @@ public class RecommendSchoolController {
         view.addObject("schoolre",schoolre);
         view.addObject("url",WebAdress.url);
         view.addObject("schoolsimg",schoolimgs);
+        List<Erweima>erweimaList=hm.erweilist();
+        view.addObject("erweimalist",erweimaList);
         return view;
     }
 

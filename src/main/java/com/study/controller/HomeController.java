@@ -30,7 +30,6 @@ public class HomeController {
         List<Article>newslist=hm.newslist();
         List<FriendlyLink>meiti=hm.meiti();
         List<FriendlyLink>jigou=hm.jigou();
-        List<Erweima>erweimaList=hm.erweilist();
 
 
         Img img=new Img();
@@ -48,10 +47,11 @@ public class HomeController {
 
         view.addObject("bannerlist",bannerList);
         view.addObject("newslist",newslist);
-        view.addObject("url",WebAdress.url);
         view.addObject("meiti",meiti);
         view.addObject("jigou",jigou);
         logger.trace("Welcome to Study-In-Japan!");
+        List<Erweima>erweimaList=hm.erweilist();
+        view.addObject("url",WebAdress.url);
         view.addObject("erweimalist",erweimaList);
         return view;
     }
@@ -82,12 +82,18 @@ public class HomeController {
     @RequestMapping(value = "/course.html")
     public  ModelAndView course() {
         ModelAndView view = new ModelAndView("course");
+        List<Erweima>erweimaList=hm.erweilist();
+        view.addObject("url",WebAdress.url);
+        view.addObject("erweimalist",erweimaList);
         return view;
     }
 
     @RequestMapping(value = "/queandanswer.html")
     public  ModelAndView queandanswer() {
         ModelAndView view = new ModelAndView("queAndanswer");
+        List<Erweima>erweimaList=hm.erweilist();
+        view.addObject("url",WebAdress.url);
+        view.addObject("erweimalist",erweimaList);
         return view;
     }
 
@@ -98,6 +104,9 @@ public class HomeController {
     @RequestMapping(value = "/teacher.html")
     public  ModelAndView teacher() {
         ModelAndView view = new ModelAndView("teacher");
+        List<Erweima>erweimaList=hm.erweilist();
+        view.addObject("url",WebAdress.url);
+        view.addObject("erweimalist",erweimaList);
         return view;
     }
 

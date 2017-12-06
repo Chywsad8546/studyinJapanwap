@@ -448,8 +448,8 @@
         <h2 class="module_title">Q&A</h2>
 
         <div class="faqs_group">
-            <h4><i class="index_icon"></i>考取日本大学，需要准备哪些考试呢？</h4>
-            <p><i class="index_icon"></i>考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？考取日本大学，需要准备哪些考试呢？</p>
+            <h4><i class="index_icon"></i>去日本留学有什么要求吗，包括学历什么的？</h4>
+            <p><i class="index_icon"></i>考大学需要高中或同等学历，大学院需要大学本科学历，专科可以考的大学较少。</p>
         </div>
         <a class="more_info" href="queandanswer.html">更多咨询</a>
     </section>
@@ -509,10 +509,7 @@
                 <c:if test="${index==1}">
                     <div><img src="${url}${erweimalist[1].url}" style="height: 150px"></i><div>${erweimalist[1].name}</div></div>
                 </c:if>
-
             </c:forEach>
-
-
         </div>
         <div class="infomation">
             <span>Email: service@ycjxschool.com</span>

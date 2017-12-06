@@ -1,7 +1,9 @@
 package com.study.controller;
 
+import com.study.dao.HomeMapper;
 import com.study.dao.NewsMapper;
 import com.study.entity.Article;
+import com.study.entity.Erweima;
 import com.study.entity.Page;
 import com.study.entity.WebAdress;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,8 @@ public class NewsController {
     @Autowired
     private NewsMapper nm;
 
+    @Autowired
+    private HomeMapper hm;
     @RequestMapping(value = "/morenews.html" )
     public ModelAndView recommend( @RequestParam(value = "pnow", defaultValue = "1", required = false)int pagenow,
                                    @RequestParam(value = "type", defaultValue = "0", required = false)int type
@@ -56,7 +60,8 @@ public class NewsController {
               modelAndView.addObject("page",pg);
               modelAndView.addObject("articlelist",articlelist);
               modelAndView.addObject("url", WebAdress.url);
-
+        List<Erweima>erweimaList=hm.erweilist();
+        modelAndView.addObject("erweimalist",erweimaList);
           return modelAndView;
     }
 
@@ -77,6 +82,8 @@ public class NewsController {
            view.addObject("article",article);
            view.addObject("url", WebAdress.url);
            view.addObject("renews",renews);
+        List<Erweima>erweimaList=hm.erweilist();
+        view.addObject("erweimalist",erweimaList);
 return view;
     }
 
