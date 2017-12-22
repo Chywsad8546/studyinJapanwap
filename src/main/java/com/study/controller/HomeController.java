@@ -58,10 +58,25 @@ public class HomeController {
 
 
     //提交评估
-    @RequestMapping(value = "/assess.html")
+    @RequestMapping(value = "/assess.html",produces = "text/html;charset=UTF-8")
     public ModelAndView assess(HttpServletRequest request,
-                               @RequestParam(value = "ass", defaultValue = "", required = false)String ass) {
-        ModelAndView view=new ModelAndView("forward:/");
+                               @RequestParam(value = "ass", defaultValue = "", required = false)String ass,
+                               @RequestParam(value = "type", defaultValue = "0", required = false)int type) {
+        ModelAndView view=null;
+  if (type==1){
+        view=new ModelAndView("forward:/");
+  }else if (type==2){
+       view=new ModelAndView("forward:course.html");
+  }else if (type==3){
+       view=new ModelAndView("forward:queandanswer.html");
+  }else if (type==4){
+      view=new ModelAndView("forward:school/list.html");
+  }else if (type==5){
+      view=new ModelAndView("forward:teacher.html");
+  }else if (type==6){
+      view=new ModelAndView("forward:news/morenews.html");
+  }
+
 
         String name=request.getParameter("name");
         String phone=request.getParameter("tel");

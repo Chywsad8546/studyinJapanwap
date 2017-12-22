@@ -13,15 +13,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="renderer" content="webkit">
     <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>资讯列表</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <script src="js/responsive.js"></script>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base.css?v=2">
 </head>
 <body>
     <header>
-        <h1><img src="images/logow.png" width="100%" height="100%" alt="英才"></h1>
+        <h1><a href=""><img src="images/logow.png" width="100%" height="100%" alt="英才"></a></h1>
         <i class="base_icon menu"></i>
         <div class="header_layer">
             <ul>
@@ -60,25 +61,25 @@
         <li <c:if test="${type==0}">class="current"</c:if>>
             <a href="news/morenews.html">
                 <h4>全部资讯</h4>
-                <p>文科コース</p>
+                <p>全部情報</p>
             </a>
         </li>
         <li <c:if test="${type==43}">class="current"</c:if>>
             <a href="news/morenews.html?type=43">
                 <h4>留学资讯<i class="hot"></i></h4>
-                <p>全科コース</p>
+                <p>留学の情報</p>
             </a>
         </li>
         <li <c:if test="${type==46}">class="current"</c:if>>
             <a href="news/morenews.html?type=46">
                 <h4>招生资讯</h4>
-                <p>进学コース</p>
+                <p>募集情報</p>
             </a>
         </li>
         <li <c:if test="${type==47}">class="current"</c:if>>
             <a href="news/morenews.html?type=47">
                 <h4>学习资料</h4>
-                <p>语言コース</p>
+                <p>学習資料</p>
             </a>
         </li>
     </ul>
@@ -168,8 +169,9 @@
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
         <form  onsubmit="tijiao()" action="assess.html">
-            <input name="name" type="text" placeholder="姓名">
-            <input type="tel" name="tel" placeholder="电话号码">
+            <input type="hidden" name="type" value="6">
+            <input required="required" name="name" type="text" placeholder="姓名">
+            <input required="required" type="tel" name="tel" placeholder="电话号码">
             <div class="textarea_box">
                 <textarea oninput="gbcoun(this)" required="required" name="ass" id="" cols="30" rows="10" placeholder="留言"></textarea>
                 <p>还可以输入<em id="ping">100</em>字</p>
@@ -196,13 +198,8 @@
         <p>明德笃实，筑梦名校</p>
         <a href="tel:4008-517-517"><i class="base_icon tel"></i>400-0888-069</a>
         <div class="wechat_weibo">
-            <c:forEach begin="0" end="1"  var="index" >
-                <c:if test="${index==0}">
-                    <div style="width: 300px;float: left" ><img src="${url}${erweimalist[0].url}" style="height: 150px"></i><div>${erweimalist[0].name}</div></div>
-                </c:if>
-                <c:if test="${index==1}">
-                    <div><img src="${url}${erweimalist[1].url}" style="height: 150px"></i><div>${erweimalist[1].name}</div></div>
-                </c:if>
+            <c:forEach items="${erweimalist}"  var="index" >
+                <div style="width: 300px;margin-left:14%" ><img src="${url}${index.url}" style="height:100px"></i><div>${index.name}</div></div>
             </c:forEach>
         </div>
         <div class="infomation">

@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="UTF-8">
     <base href="/">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -16,14 +17,15 @@
     <title>首页</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script src="js/responsive.js"></script>
     <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
-    <link rel="stylesheet" href="css/base.css?v=2016">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css?v=2">
+    <link rel="stylesheet" href="css/index.css?v=2">
 </head>
 <body>
     <header>
-        <h1><img src="images/logow.png" width="100%" height="100%" alt="英才"></h1>
+        <h1><a href=""><img src="images/logow.png" width="100%" height="100%" alt="英才"></a></h1>
         <i class="base_icon menu"></i>
         <div class="header_layer">
             <ul>
@@ -84,6 +86,7 @@
     <section class="assess_consult">
         <h2>免费获取专业评估，专业顾问极速响应</h2>
         <form onsubmit="tijiao()" action="assess.html">
+            <input type="hidden" name="type" value="1">
             <input required="required" name="name" type="text" placeholder="姓名">
             <input required="required" type="tel" name="tel" placeholder="电话号码">
             <div class="form_group clearfix">
@@ -343,7 +346,7 @@
                             </dl>
                             <dl class="clearfix">
                                 <dt>日语：</dt>
-                                <dd>N2</dd>
+                                <dd>N1</dd>
                             </dl>
                             <dl class="clearfix">
                                 <dt>其他科目：</dt>
@@ -459,8 +462,9 @@
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
         <form onsubmit="tijiao()" action="assess.html">
-            <input name="name" type="text" required="required" placeholder="姓名">
-            <input name="tel" type="tel" required="required" placeholder="电话号码">
+            <input type="hidden" name="type" value="1">
+            <input required="required" name="name" type="text" placeholder="姓名">
+            <input required="required" type="tel" name="tel" placeholder="电话号码">
             <div class="textarea_box">
                 <textarea oninput="gbcoun(this)" required="required" name="ass" id="" cols="30" rows="10" placeholder="留言"></textarea>
                 <p>还可以输入<em id="ping">100</em>字</p>
@@ -487,13 +491,13 @@
         <h2>合作媒体</h2>
         <ul>
             <c:forEach items="${meiti}" var="item">
-                <li><img src="${url}${item.webLogo}" width="100%" height="100%" alt="${item.webTitle}"></li>
+                <li class="meiticss"><img src="${url}${item.webLogo}" width="100%" height="70%" alt="${item.webTitle}"></li>
             </c:forEach>
         </ul>
         <h2>合作机构</h2>
         <ul>
             <c:forEach items="${jigou}" var="item">
-                <li><img src="${url}${item.webLogo}" width="100%" height="100%" alt="${item.webTitle}"></li>
+                <li class="jigoucss"><img src="${url}${item.webLogo}" width="100%" height="70%" alt="${item.webTitle}"></li>
             </c:forEach>
         </ul>
     </section>
@@ -502,14 +506,17 @@
         <p>明德笃实，筑梦名校</p>
         <a href="tel:4008-517-517"><i class="base_icon tel"></i>400-0888-069</a>
         <div class="wechat_weibo">
-            <c:forEach begin="0" end="1"  var="index" >
+     <%--       <c:forEach begin="0" end="1"  var="index" >
                 <c:if test="${index==0}">
                     <div style="width: 300px;float: left" ><img src="${url}${erweimalist[0].url}" style="height: 150px"></i><div>${erweimalist[0].name}</div></div>
                 </c:if>
                 <c:if test="${index==1}">
                     <div><img src="${url}${erweimalist[1].url}" style="height: 150px"></i><div>${erweimalist[1].name}</div></div>
                 </c:if>
-            </c:forEach>
+            </c:forEach>--%>
+         <c:forEach items="${erweimalist}"  var="index" >
+             <div style="width: 300px;margin-left:14%" ><img src="${url}${index.url}" style="height:100px"></i><div>${index.name}</div></div>
+         </c:forEach>
         </div>
         <div class="infomation">
             <span>Email: service@ycjxschool.com</span>

@@ -13,17 +13,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="renderer" content="webkit">
     <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>推荐名校详情</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <script src="js/responsive.js"></script>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base.css?v=2">
     <link rel="stylesheet" href="css/recommend_detail.css">
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=SBIwpaql7GBmOZgUCwiKavvF6kFdREW9"></script>
 </head>
 <body>
     <header>
-        <h1><img src="images/logow.png" width="100%" height="100%" alt="英才"></h1>
+        <h1><a href=""><img src="images/logow.png" width="100%" height="100%" alt="英才"></a></h1>
         <i class="base_icon menu"></i>
         <div class="header_layer">
             <ul>
@@ -194,7 +195,7 @@
                 <li class="hot_list">
                     <a href="school/recommend_detail.html?id=${node.id}">
                         <div class="hot_pic">
-                            <img src="${url}${node.img}" width="100%" alt="">
+                            <img src="${url}${node.img}" width="70%" alt="">
                         </div>
                         <div class="hot_list_cont">
                             <h6>${node.uname}</h6>
@@ -247,8 +248,9 @@
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
         <form  onsubmit="tijiao()" action="assess.html">
-            <input name="name" type="text" placeholder="姓名">
-            <input type="tel" name="tel" placeholder="电话号码">
+            <input type="hidden" name="type" value="4">
+            <input required="required" name="name" type="text" placeholder="姓名">
+            <input required="required" type="tel" name="tel" placeholder="电话号码">
             <div class="textarea_box">
                 <textarea oninput="gbcoun(this)" required="required" name="ass" id="" cols="30" rows="10" placeholder="留言"></textarea>
                 <p>还可以输入<em id="ping">100</em>字</p>
@@ -275,13 +277,8 @@
         <p>明德笃实，筑梦名校</p>
         <a href="tel:4008-517-517"><i class="base_icon tel"></i>400-0888-069</a>
         <div class="wechat_weibo">
-            <c:forEach begin="0" end="1"  var="index" >
-                <c:if test="${index==0}">
-                    <div style="width: 300px;float: left" ><img src="${url}${erweimalist[0].url}" style="height: 150px"></i><div>${erweimalist[0].name}</div></div>
-                </c:if>
-                <c:if test="${index==1}">
-                    <div><img src="${url}${erweimalist[1].url}" style="height: 150px"></i><div>${erweimalist[1].name}</div></div>
-                </c:if>
+            <c:forEach items="${erweimalist}"  var="index" >
+                <div style="width: 300px;margin-left:14%" ><img src="${url}${index.url}" style="height:100px"></i><div>${index.name}</div></div>
             </c:forEach>
         </div>
         <div class="infomation">

@@ -24,7 +24,7 @@
                 AND authentication =#{school.authentication}
             </if>
         </where>
-        ORDER BY popularity ASC LIMIT #{page.startNum},#{page.avgPageCount}
+        ORDER BY popularity DESC LIMIT #{page.startNum},#{page.avgPageCount}
     </select>
 
     <select id="schoolinfo" resultType="com.study.entity.School">

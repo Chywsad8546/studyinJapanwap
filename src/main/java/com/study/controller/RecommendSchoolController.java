@@ -42,6 +42,7 @@ public class RecommendSchoolController {
         school.setSchoolnature(type);
         List<School> schools=rc.schoollist(school,pg);
 
+        view.addObject("schoolcount",nodeCount);
         view.addObject("type",type);
         view.addObject("schools",schools);
         view.addObject("page",pg);

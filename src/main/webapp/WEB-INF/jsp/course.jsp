@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -16,13 +17,14 @@
     <title>精品课程</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script src="js/responsive.js"></script>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base.css?v=2">
     <link rel="stylesheet" href="css/course.css">
 </head>
 <body>
     <header>
-        <h1><img src="images/logow.png" width="100%" height="100%" alt="英才"></h1>
+        <h1><a href=""><img src="images/logow.png" width="100%" height="100%" alt="英才"></a></h1>
         <i class="base_icon menu"></i>
         <div class="header_layer">
             <ul>
@@ -141,7 +143,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="28万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -236,7 +238,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="38万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -347,7 +349,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="45万日元">
         </section>
     </section>
 
@@ -395,7 +397,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="30万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -473,7 +475,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="40万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -561,7 +563,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="47万日元">
         </section>
     </section>
 
@@ -657,7 +659,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="37万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -780,11 +782,11 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="47万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
-            <h3>全半年全科套餐</h3>
+            <h3>全年全科套餐</h3>
             <div class="examination_courses">
                 <h4>留学考试课程</h4>
                 <ul>
@@ -912,7 +914,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="57万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -1047,7 +1049,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="67万日元">
         </section>
     </section>
 
@@ -1188,7 +1190,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="112万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -1323,7 +1325,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="75万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -1479,7 +1481,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="275万日元">
         </section>
 
         <section class="course_cont">
@@ -1655,7 +1657,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="112万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -1826,7 +1828,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="75万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -2009,7 +2011,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="275万日元">
         </section>
     </section>
 
@@ -2051,7 +2053,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="12万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -2099,7 +2101,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="15万日元">
         </section>
         <section class="course_cont">
             <img src="images/course_title_icon.png" class="course_title_icon" alt="">
@@ -2159,7 +2161,7 @@
                 <p>提高学员日语水平，提高应试考试能力。</p>
             </div>
             <p class="price_text">获取学费价格</p>
-            <input class="assess_btn" type="text" value="立即评估">
+            <input  onclick="window.open( 'http://p.qiao.baidu.com/cps/chat?siteId=11483335&userId=24811869','','height=500,width=611,scrollbars=yes,status=yes')" class="assess_btn" type="text" value="25万日元">
         </section>
     </section>
 
@@ -2184,13 +2186,8 @@
         <p>明德笃实，筑梦名校</p>
         <a href="tel:4008-517-517"><i class="base_icon tel"></i>400-0888-069</a>
         <div class="wechat_weibo">
-            <c:forEach begin="0" end="1"  var="index" >
-                <c:if test="${index==0}">
-                    <div style="width: 300px;float: left" ><img src="${url}${erweimalist[0].url}" style="height: 150px"></i><div>${erweimalist[0].name}</div></div>
-                </c:if>
-                <c:if test="${index==1}">
-                    <div><img src="${url}${erweimalist[1].url}" style="height: 150px"></i><div>${erweimalist[1].name}</div></div>
-                </c:if>
+            <c:forEach items="${erweimalist}"  var="index" >
+                <div style="width: 300px;margin-left:14%" ><img src="${url}${index.url}" style="height:100px"></i><div>${index.name}</div></div>
             </c:forEach>
         </div>
         <div class="infomation">
@@ -2208,15 +2205,26 @@
 
     <div class="assess_pop">
         <h4>免费评估</h4>
-        <form action="">
-            <input type="text" placeholder="姓名">
-            <input type="tel" placeholder="电话号码">
+        <form  onsubmit="tijiao()" action="assess.html">
+            <input type="hidden" name="type" value="2">
+            <input required="required" name="name" type="text" placeholder="姓名">
+            <input required="required" type="tel" name="tel" placeholder="电话号码">
             <div class="assess_group clearfix">
                 <button class="jfl close_assess" type="button">取消</button>
                 <button class="jfr submit" type="submit">立即评估</button>
             </div>
         </form>
     </div>
+
+
+    <script language="javascript" >
+
+        function tijiao() {
+            alert("评估成功，留意电话")
+            return true;
+        }
+
+    </script>
 
     <script src="js/main.js"></script>
     <script src="js/jquery-1.11.3.min.js"></script>

@@ -13,16 +13,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="renderer" content="webkit">
     <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>推荐名校</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <script src="js/responsive.js"></script>
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/base.css?v=2">
     <link rel="stylesheet" href="css/recommend.css">
 </head>
 <body>
     <header>
-        <h1><img src="images/logow.png" width="100%" height="100%" alt="英才"></h1>
+        <h1><a href=""><img src="images/logow.png" width="100%" height="100%" alt="英才"></a></h1>
         <i class="base_icon menu"></i>
         <div class="header_layer">
             <ul>
@@ -61,59 +62,61 @@
         <li <c:if test="${type==0}">class="current"</c:if>>>
             <a href="school/list.html?pnow=1&type=0">
                 <h4>全部大学</h4>
-                <p>文科コース</p>
+                <p>すべての大学</p>
             </a>
         </li>
         <li <c:if test="${type==1}">class="current"</c:if>>>
             <a href="school/list.html?pnow=1&type=1">
-                <h4>国立大学</h4>
-                <p>全科コース</p>
+                <h4>国公立大学</h4>
+                <p>国公立大学</p>
             </a>
         </li>
-        <li <c:if test="${type==3}">class="current"</c:if>>>
+      <%--  <li <c:if test="${type==3}">class="current"</c:if>>>
             <a href="school/list.html?pnow=1&type=3">
                 <h4>公立大学</h4>
-                <p>进学コース</p>
+                <p>西紀大学</p>
             </a>
-        </li>
+        </li>--%>
         <li <c:if test="${type==2}">class="current"</c:if>>>
             <a href="school/list.html?pnow=1&type=2">
                 <h4>私立大学</h4>
-                <p>语言コース</p>
+                <p>私立大学</p>
             </a>
         </li>
     </ul>
 
     <section>
         <div class="recommend_cont clearfix">
-            <span class="jfl">共200所</span>
+            <span class="jfl">共${schoolcount}所</span>
             <span class="jfr"><i class="recommend_icon num"></i>CWUR日本大学排名</span>
         </div>
         <ul class="space_mb">
-            <c:forEach var="item" items="${schools}">
+            <c:forEach  var="node" begin="0" end="3" >
+                <c:if test="${schools[node]!=null}">
                 <li>
-                    <a class="recommend_item clearfix" href="school/recommend_detail.html?id=${item.id}">
+                    <a class="recommend_item clearfix" href="school/recommend_detail.html?id=${schools[node].id}">
                         <div class="recommend_item_pic">
-                            <img width="100%" src="${url}${item.img}" alt="">
+                            <img width="60%" src="${url}${schools[node].img}" alt="">
                         </div>
                         <div class="recommend_item_cont">
-                            <h5>${item.uname}<span>${item.jpname}</span></h5>
-                            <p class="address"><i class="recommend_icon add"></i>${item.schooladress}</p>
+                            <h5>${schools[node].uname}<span>${schools[node].jpname}</span></h5>
+                            <p class="address"><i class="recommend_icon add"></i>${schools[node].schooladress}</p>
                             <div class="authentication clearfix">
                                 <p>中国教育部认证<i class="recommend_icon auth"></i></p>
-                                <span><i class="recommend_icon num"></i><strong>22</strong></span>
+                                <span><i class="recommend_icon num"></i><strong>${node+1+page.startNum}</strong></span>
                             </div>
                             <div class="clearfix">
-                                <span class="jfl"><em>${item.peoplecount}人</em><em><c:choose>
+                                <span class="jfl"><em>${schools[node].peoplecount}人</em><em><c:choose>
                                     <c:when test="${schools[node].schoolnature== 1}">国立</c:when>
                                     <c:when test="${schools[node].schoolnature== 2}">私立</c:when>
                                     <c:when test="${schools[node].schoolnature== 3}">公立</c:when>
                                 </c:choose></em></span>
-                                <span class="jfr">人气：<em>${item.popularity}</em></span>
+                                <span class="jfr">人气：<em>${schools[node].popularity}</em></span>
                             </div>
                         </div>
                     </a>
                 </li>
+                </c:if>
             </c:forEach>
            <%-- <li>
                 <a class="recommend_item clearfix" href="#">
@@ -195,18 +198,18 @@
         <div class="paging_group">
             <c:choose>
                 <c:when test="${page.pageCount==1||page.pageCount==0}">
-                    <a class="disable" href="school/list.html?pnow=${page.pageNow-1}&type=${type}">上一页</a>
-                    <a class="disable" href="school/list.html?pnow=${page.pageNow+1}&type=${type}">下一页</a>
+                   <%-- <a class="disable" href="school/list.html?pnow=${page.pageNow-1}&type=${type}">上一页</a>
+                    <a class="disable" href="school/list.html?pnow=${page.pageNow+1}&type=${type}">下一页</a>--%>
                 </c:when>
 
                 <c:when test="${page.pageNow== 1}">
-                    <a class="disable" href="school/list.html?pnow=${page.pageNow-1}&type=${type}">上一页</a>
+                 <%--   <a class="disable" href="school/list.html?pnow=${page.pageNow-1}&type=${type}">上一页</a>--%>
                     <a href="school/list.html?pnow=${page.pageNow+1}&type=${type}">下一页</a>
                 </c:when>
 
                 <c:when test="${page.pageNow== page.pageCount}">
                     <a  href="school/list.html?pnow=${page.pageNow-1}&type=${type}">上一页</a>
-                    <a class="disable" href="school/list.html?pnow=${page.pageNow+1}&type=${type}">下一页</a>
+ <%--                   <a class="disable" href="school/list.html?pnow=${page.pageNow+1}&type=${type}">下一页</a>--%>
                 </c:when>
 
                 <c:otherwise>
@@ -226,8 +229,9 @@
         <p>英才进学塾 一对一教学模式</p>
         <h2>赴日留学免费评估</h2>
         <form  onsubmit="tijiao()" action="assess.html">
-            <input name="name" type="text" placeholder="姓名">
-            <input type="tel" name="tel" placeholder="电话号码">
+            <input type="hidden" name="type" value="4">
+            <input required="required" name="name" type="text" placeholder="姓名">
+            <input required="required" type="tel" name="tel" placeholder="电话号码">
             <div class="textarea_box">
                 <textarea oninput="gbcoun(this)" required="required" name="ass" id="" cols="30" rows="10" placeholder="留言"></textarea>
                 <p>还可以输入<em id="ping">100</em>字</p>
@@ -254,13 +258,8 @@
         <p>明德笃实，筑梦名校</p>
         <a href="tel:4008-517-517"><i class="base_icon tel"></i>400-0888-069</a>
         <div class="wechat_weibo">
-            <c:forEach begin="0" end="1"  var="index" >
-                <c:if test="${index==0}">
-                    <div style="width: 300px;float: left" ><img src="${url}${erweimalist[0].url}" style="height: 150px"></i><div>${erweimalist[0].name}</div></div>
-                </c:if>
-                <c:if test="${index==1}">
-                    <div><img src="${url}${erweimalist[1].url}" style="height: 150px"></i><div>${erweimalist[1].name}</div></div>
-                </c:if>
+            <c:forEach items="${erweimalist}"  var="index" >
+                <div style="width: 300px;margin-left:14%" ><img src="${url}${index.url}" style="height:100px"></i><div>${index.name}</div></div>
             </c:forEach>
         </div>
         <div class="infomation">
